@@ -1,7 +1,7 @@
 <?php $data = array_map(fn ($item) => ([
-    '<code>' . $item[0] . '<code>',
-    '<code>' . $item[1] . '<code>',
-    '<code>' . $item[2] . '<code>',
+    '<code>' . $item[0] . '</code>',
+    '<code>' . $item[1] . '</code>',
+    '<code>' . $item[2] . '</code>',
     $item[3]
 ]), $data) ?>
 
