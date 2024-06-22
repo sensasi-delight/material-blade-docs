@@ -17,6 +17,7 @@
         body {
             margin: 0;
             padding: 0;
+            display: flex;
             background-color: var(--mdc-theme-background);
         }
 
@@ -39,12 +40,16 @@
         .src-code.show {
             display: block;
         }
+
+        section {
+            margin-bottom: 32px;
+        }
     </style>
 
     <title>Material Blade &mdash; @yield('title')</title>
 </head>
 
-<body style="display: flex;">
+<body>
     <x-mbc::drawer />
 
     <main style="padding: 32px; flex-grow: 1;">
