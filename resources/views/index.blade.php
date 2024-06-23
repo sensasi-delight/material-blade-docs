@@ -8,7 +8,7 @@ $packageInfo = json_decode(File::get(base_path('vendor/sensasi-delight/material-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ $packageInfo->description }}</title>
+    <title>Material Blade &mdash; {{ $packageInfo->description }}</title>
 
     <x-mbc::_assets />
 
