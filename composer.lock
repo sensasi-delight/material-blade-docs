@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1673aa64b7ecb59b31c9bd9fda09c4af",
+    "content-hash": "3caa17d13abc3c347acaff1478f01183",
     "packages": [
         {
             "name": "brick/math",
@@ -3113,25 +3113,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensasi-delight/material-blade.git",
-                "reference": "646f67970f9865e8041e8a248b170192cd58a535"
+                "reference": "346349841dc3ed051fb6436af1be541197186e3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensasi-delight/material-blade/zipball/646f67970f9865e8041e8a248b170192cd58a535",
-                "reference": "646f67970f9865e8041e8a248b170192cd58a535",
+                "url": "https://api.github.com/repos/sensasi-delight/material-blade/zipball/346349841dc3ed051fb6436af1be541197186e3b",
+                "reference": "346349841dc3ed051fb6436af1be541197186e3b",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^8|^9|^10|^11",
                 "illuminate/view": "^8|^9|^10|^11",
-                "php": "^7|^8"
+                "php": "^8.1"
             },
             "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
                     "providers": [
-                        "MaterialBlade\\MaterialBladeServiceProvider"
+                        "MaterialBlade\\ServiceProvider"
                     ]
                 }
             },
@@ -3163,7 +3163,7 @@
                 "issues": "https://github.com/sensasi-delight/material-blade/issues",
                 "source": "https://github.com/sensasi-delight/material-blade/tree/main"
             },
-            "time": "2024-06-20T20:16:51+00:00"
+            "time": "2024-06-24T20:22:49+00:00"
         },
         {
             "name": "symfony/clock",
