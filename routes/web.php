@@ -4,12 +4,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('index');
 
-Route::get('/installation', function () {
-    return view('installation');
-});
-
-Route::get('/components/lists', function () {
-    return view('docs.lists');
-});
+include __DIR__ . '/subroutes/doc-routes.php';
