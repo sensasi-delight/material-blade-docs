@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title') &mdash; {{ config('app.name') }}</title>
+    <title>{{ $title }} &mdash; {{ config('app.name') }}</title>
 
     <link href="https://unpkg.com/prismjs@v1.x/themes/prism-tomorrow.css" rel="stylesheet" />
     <x-mbc::_assets />
@@ -50,8 +50,6 @@
             height: fit-content !important;
         }
     </style>
-
-    <title>Material Blade &mdash; @yield('title')</title>
 </head>
 
 <body>
@@ -61,23 +59,15 @@
         </x-slot:title>
 
         <x-mbc::list element="nav" dense>
-            <x-mbc::typography disableGutter style="font-weight: bold;" class="mbc-px-2" element="div">
+            <x-mbc::list-item href="#" element="a">
                 Getting Started
-            </x-mbc::typography>
-
-            <x-mbc::list-item icon="home" href="#" element="a">
-                Home
             </x-mbc::list-item>
 
-            <x-mbc::list-item icon="list" href="#" element="a">
-                Documentation
-            </x-mbc::list-item>
-
-            <x-mbc::typography disableGutter style="font-weight: bold;" class="mbc-px-2" element="div">
+            <x-mbc::typography class="mbc-px-2" style="font-weight: bold;" disableGutter element="div">
                 Components
             </x-mbc::typography>
 
-            <x-mbc::list-item style="height: calc(var(--mbc-scaling-factor) * 4)" href="{{ route('components.list') }}"
+            <x-mbc::list-item href="{{ route('components.list') }}" style="height: calc(var(--mbc-scaling-factor) * 4)"
                 element="a" :activated="request()->route()->named('components.list')">
                 List
             </x-mbc::list-item>
@@ -85,12 +75,30 @@
     </x-mbc::drawer>
 
 
-    <main class="mbc-m-4">
-        @yield('main')
+    <main class="mbc-m-4" style="flex-grow: 1;">
+        <section>
+            <x-h1>
+                {{ $title }}
+            </x-h1>
+
+            <div style="margin-bottom: 48px;">
+                @yield('description')
+            </div>
+
+            @yield('content')
+        </section>
+
+        @isset($props)
+            <x-component-props-section :data="$props" />
+        @endisset
+
+        @isset($referenceLinks)
+            <x-references-section :links="$referenceLinks" />
+        @endisset
     </main>
 
     <x-mbc::drawer class="right-sidebar">
-        <x-mbc::typography disableGutter style="font-weight: bold;">
+        <x-mbc::typography style="font-weight: bold;" disableGutter>
             Contents
         </x-mbc::typography>
 
