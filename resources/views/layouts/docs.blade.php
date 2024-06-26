@@ -59,18 +59,29 @@
         </x-slot:title>
 
         <x-mbc::list element="nav" dense>
-            <x-mbc::list-item href="#" element="a">
-                Getting Started
-            </x-mbc::list-item>
+            @php
+                $docRoutes = collect(App\Enums\DocRoute::cases())
+                    ->map(function ($routeEnum) {
+                        return $routeEnum->value;
+                    })
+                    ->groupBy(function ($route) {
+                        return explode('.', $route)[0];
+                    });
+            @endphp
+            @foreach ($docRoutes as $section => $routes)
+                @if ($routes->count() > 1)
+                    <x-mbc::typography class="mbc-px-2" style="text-transform: uppercase; font-weight: bold;"
+                        variant="caption" disableGutter element="div">
+                        {{ ucfirst($section) }}
+                    </x-mbc::typography>
+                @endif
 
-            <x-mbc::typography class="mbc-px-2" style="font-weight: bold;" disableGutter element="div">
-                Components
-            </x-mbc::typography>
-
-            <x-mbc::list-item href="{{ route('components.list') }}" style="height: calc(var(--mbc-scaling-factor) * 4)"
-                element="a" :activated="request()->route()->named('components.list')">
-                List
-            </x-mbc::list-item>
+                @foreach ($routes as $route)
+                    <x-mbc::list-item href="{{ route($route) }}" element="a" :activated="request()->route()->named($route)">
+                        {{ ucfirst(str_replace('-', ' ', str_replace("{$section}.", '', $route))) }}
+                    </x-mbc::list-item>
+                @endforeach
+            @endforeach
         </x-mbc::list>
     </x-mbc::drawer>
 

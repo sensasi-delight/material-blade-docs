@@ -1,17 +1,14 @@
 <?php
 
+use App\Enums\DocRoute;
 use Illuminate\Support\Facades\Route;
 
-$docRoutes = [
-    'getting-started' => ['introduction', 'requirements', 'installation'],
-    'components' => ['list'],
-];
+foreach (DocRoute::cases() as $routeEnum) {
+    $route = $routeEnum->value;
+    $path = implode('/', explode('.', $route));
 
-foreach ($docRoutes as $subpath => $pages) {
-    foreach ($pages as $page) {
-        Route::get(
-            $subpath . '/' . $page,
-            fn () => view('pages.' . $subpath . '.' . $page . '.index')
-        )->name($subpath . '.' . $page);
-    }
+    Route::get(
+        $path,
+        fn () => view("pages.{$route}.index")
+    )->name($route);
 }

@@ -34,13 +34,12 @@
                 </x-mbc::typography>
 
                 <div>
-                    <x-mbc::button label="Get Started" variant="raised"
-                        href="{{ route('getting-started.installation') }}" />
+                    <x-mbc::button href="{{ route('getting-started') }}" label="Get Started" variant="raised" />
                 </div>
             </x-mbc::grid>
 
-            <x-mbc::grid colSize="6"
-                style="background-color: #EAEAEA; overflow:hidden; padding-right: 0; height: 100vh" padding="2">
+            <x-mbc::grid style="background-color: #EAEAEA; overflow:hidden; padding-right: 0; height: 100vh"
+                colSize="6" padding="2">
                 <x-mbc::grid container @style(['width: 800px'])>
                     <x-mbc::grid colSize="6" @style(['display: flex', 'flex-direction: column', 'gap: 16px'])>
                         <x-mbc::Card>
@@ -68,11 +67,11 @@
 
                                 <!-- Icon Button Actions -->
                                 <x-slot name="iconButtons">
-                                    <x-mbc::IconButton toggle icon="favorite" offIcon="favorite_border" color="error"
-                                        aria-label="Add to favorites" title="Add to favorites" />
-                                    <x-mbc::IconButton icon="share" title="Share" />
-                                    <x-mbc::IconButton icon="more_vert" title="More options"
-                                        aria-label="More options" />
+                                    <x-mbc::IconButton title="Add to favorites" aria-label="Add to favorites" toggle
+                                        icon="favorite" offIcon="favorite_border" color="error" />
+                                    <x-mbc::IconButton title="Share" icon="share" />
+                                    <x-mbc::IconButton title="More options" aria-label="More options"
+                                        icon="more_vert" />
                                 </x-slot>
                             </x-mbc::CardActions>
                         </x-mbc::Card>
@@ -163,8 +162,9 @@
                         <x-mbc::Card>
                             <div
                                 style="display:flex; flex-direction: row; border-bottom-left-radius: inherit; border-top-left-radius: inherit;">
-                                <x-mbc::CardMedia variant="square" style="width: 110px; border-radius: inherit;"
-                                    src="https://upload.wikimedia.org/wikipedia/en/9/9f/Bohemian_Rhapsody.png">
+                                <x-mbc::CardMedia
+                                    src="https://upload.wikimedia.org/wikipedia/en/9/9f/Bohemian_Rhapsody.png"
+                                    style="width: 110px; border-radius: inherit;" variant="square">
                                 </x-mbc::CardMedia>
 
                                 <div>
@@ -172,10 +172,10 @@
 
                                     <x-mbc::CardActions>
                                         <x-slot name="iconButtons">
-                                            <x-mbc::IconButton icon="skip_previous" title="Previous" />
-                                            <x-mbc::IconButton icon="play_arrow" title="play"
-                                                style="font-size: 3em;" />
-                                            <x-mbc::IconButton icon="skip_next" title="Next" />
+                                            <x-mbc::IconButton title="Previous" icon="skip_previous" />
+                                            <x-mbc::IconButton title="play" style="font-size: 3em;"
+                                                icon="play_arrow" />
+                                            <x-mbc::IconButton title="Next" icon="skip_next" />
                                         </x-slot>
                                     </x-mbc::CardActions>
                                 </div>
