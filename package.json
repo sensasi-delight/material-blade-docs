@@ -1,0 +1,10 @@
+{
+    "scripts": {
+        "lint": "prettier --check resources/views/**/*.blade.php",
+        "lint:fix": "prettier --write resources/views/**/*.blade.php"
+    },
+    "devDependencies": {
+        "@shufo/prettier-plugin-blade": "^1.14.1",
+        "prettier": "^3.3.2"
+    }
+}

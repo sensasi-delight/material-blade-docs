@@ -13,11 +13,13 @@
                 {{ $title }}
             </x-h1>
 
-            <x-mbc::typography variant="h6" element="p">
+            <x-mbc::typography variant="h6"
+                               element="p">
                 Lists are continuous, vertical indexes of text or images.
             </x-mbc::typography>
 
-            <x-mbc::alert severity="info" variant="outlined">
+            <x-mbc::alert severity="info"
+                          variant="outlined">
                 "<code>List</code>" is a <a href="https://www.php.net/manual/en/reserved.keywords.php">reserved keyword in
                     PHP</a>, therefore we use "<code>MbcList</code>" as the component name.
             </x-mbc::alert>
@@ -33,14 +35,14 @@
 
         </section>
 
-
         <section>
             <x-h2>
                 Dense List
             </x-h2>
 
             <x-code-preview>
-                <x-mbc::list dense disableRipple>
+                <x-mbc::list dense
+                             disableRipple>
                     <x-mbc::list-item>
                         Item 1
                     </x-mbc::list-item>

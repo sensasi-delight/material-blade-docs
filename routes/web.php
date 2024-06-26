@@ -6,4 +6,4 @@ Route::get('/', function () {
     return view('index');
 })->name('index');
 
-include __DIR__ . '/subroutes/doc-routes.php';
+include __DIR__.'/subroutes/doc-routes.php';
