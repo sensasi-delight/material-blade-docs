@@ -13,7 +13,11 @@
         body {
             margin: 0;
             padding: 0;
-            display: flex;
+        }
+
+        main {
+            margin-right: calc(180px + 32px);
+            margin-left: calc(256px + 32px);
         }
 
         @keyframes fade_in_show {
@@ -43,6 +47,12 @@
         .right-sidebar {
             padding: calc(2 * var(--mbc-theme-scaling-factor));
             padding-top: calc(10 * var(--mbc-theme-scaling-factor));
+            position: fixed;
+            height: 100vh !important;
+            width: 180px;
+            top: 0;
+            right: 0;
+            overflow-y: auto;
         }
 
         .right-sidebar a {
@@ -53,7 +63,7 @@
 </head>
 
 <body>
-    <x-mbc::drawer subtitle="Documentation">
+    <x-mbc::drawer style="position: fixed; top:0; left: 0; height: 100vh; overflow-y: auto;" subtitle="Documentation">
         <x-slot:title>
             <a href="{{ route('index') }}" style="color: inherit; text-decoration: none;">Material Blade</a>
         </x-slot:title>
@@ -85,8 +95,7 @@
         </x-mbc::list>
     </x-mbc::drawer>
 
-
-    <main class="mbc-m-4" style="flex-grow: 1;">
+    <main class="mbc-my-4">
         <section>
             <x-h1>
                 {{ $title }}
@@ -97,15 +106,21 @@
             </div>
 
             @yield('content')
+
+            @isset($props)
+                <x-component-props-section :data="$props" />
+            @endisset
+
+            @isset($referenceLinks)
+                <x-references-section :links="$referenceLinks" />
+            @endisset
         </section>
 
-        @isset($props)
-            <x-component-props-section :data="$props" />
-        @endisset
-
-        @isset($referenceLinks)
-            <x-references-section :links="$referenceLinks" />
-        @endisset
+        <div class="mbc-mt-8">
+            <x-mbc::button
+                href="https://github.com/sensasi-delight/material-blade-docs/tree/main/resources/views/pages/{{ Route::current()->uri }}/index.blade.php"
+                label="Edit this page" variant="outlined" endIcon="open_in_new" target="_blank" />
+        </div>
     </main>
 
     <x-mbc::drawer class="right-sidebar">
@@ -114,19 +129,30 @@
         </x-mbc::typography>
 
         <x-mbc::list>
-            <li>
-                <x-mbc::list-item href="#" element="a" activated>
-                    Home
-                </x-mbc::list-item>
-            </li>
+            @isset($props)
+                @php
+                    array_push($headings, 'Props');
+                @endphp
+            @endisset
 
-            <li>
-                <x-mbc::list-item href="#" element="a">
-                    Documentation
-                </x-mbc::list-item>
-            </li>
+            @isset($referenceLinks)
+                @php
+                    array_push($headings, 'References');
+                @endphp
+            @endisset
+
+            @foreach ($headings as $i => $heading)
+                <li>
+                    <x-mbc::list-item href="#{{ strtolower(str_replace(' ', '-', $heading)) }}" element="a"
+                        :activated="$loop->first">
+                        {{ $heading }}
+                    </x-mbc::list-item>
+                </li>
+            @endforeach
         </x-mbc::list>
     </x-mbc::drawer>
+
+
 
     <script src="https://unpkg.com/prismjs@v1.x/components/prism-core.min.js"></script>
     <script src="https://unpkg.com/prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>

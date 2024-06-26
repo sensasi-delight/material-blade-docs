@@ -8,6 +8,7 @@
             'https://material-components.github.io/material-components-web-catalog/',
             'https://github.com/material-components/material-components-web/tree/v14.0.0',
         ],
+        'headings' => ['Installation', 'License', 'Contact'],
     ];
 @endphp
 
