@@ -43,8 +43,10 @@
         </x-h2>
 
         <x-code-preview>
-            <x-mbc::list dense
-                         disableRipple>
+            <x-mbc::list
+                dense
+                disableRipple
+            >
                 <x-mbc::list-item>
                     Item 1
                 </x-mbc::list-item>

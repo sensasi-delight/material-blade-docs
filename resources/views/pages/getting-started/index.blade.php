@@ -16,20 +16,32 @@
 
 @section('description')
     <x-mbc::typography>
-        Material Blade is a simple package that provides the beautifulness of <a href="https://material.io"
-           target="_blank">Material Design
-            components <x-mbc::icon style="font-size: inherit"
-                         icon="open_in_new" /></a> as <a href="https://laravel.com/docs/blade#components"
-           target="_blank">
+        Material Blade is a simple package that provides the beautifulness of <a
+            href="https://material.io"
+            target="_blank"
+        >Material Design
+            components <x-mbc::icon
+                style="font-size: inherit"
+                icon="open_in_new"
+            /></a> as <a
+            href="https://laravel.com/docs/blade#components"
+            target="_blank"
+        >
             Laravel
-            Blade components <x-mbc::icon style="font-size: inherit"
-                         icon="open_in_new" /></a>. Material Blade aims to
+            Blade components <x-mbc::icon
+                style="font-size: inherit"
+                icon="open_in_new"
+            /></a>. Material Blade aims to
         make
-        UI/UX development of your Laravel app faster, inspired by <a href="https://mui.com/material-ui/"
-           target="_blank">MUI
+        UI/UX development of your Laravel app faster, inspired by <a
+            href="https://mui.com/material-ui/"
+            target="_blank"
+        >MUI
             (Material
-            UI) <x-mbc::icon style="font-size: inherit"
-                         icon="open_in_new" /></a>.
+            UI) <x-mbc::icon
+                style="font-size: inherit"
+                icon="open_in_new"
+            /></a>.
     </x-mbc::typography>
 
     <pre><code class="language-php">// from this
@@ -46,16 +58,21 @@
     <x-mbc::typography>
         General knowledge of Laravel and Blade components i'ts required for using this package. However, the fully
         understand about this feature is helpful for optimizing the usages of this package. If you never heard about <a
-           href="https://laravel.com/docs/blade#components"
-           target="_blank">
+            href="https://laravel.com/docs/blade#components"
+            target="_blank"
+        >
             Laravel
-            Blade components <x-mbc::icon style="font-size: inherit"
-                         icon="open_in_new" /></a>, it is a good start to
+            Blade components <x-mbc::icon
+                style="font-size: inherit"
+                icon="open_in_new"
+            /></a>, it is a good start to
         understand it and plays with Material Blade package.
     </x-mbc::typography>
 
-    <x-mbc::alert title="Warning"
-                  severity="warning">
+    <x-mbc::alert
+        title="Warning"
+        severity="warning"
+    >
         This package is still in development. The components and features are limited and may not be suitable for
         production use.
     </x-mbc::alert>
@@ -68,9 +85,13 @@
         </x-h2>
 
         <x-mbc::typography>
-            Material Blade is available on <a href="https://packagist.org/packages/sensasi-delight/material-blade"
-               target="_blank">Packagist <x-mbc::icon style="font-size: inherit"
-                             icon="open_in_new" /></a>. You can
+            Material Blade is available on <a
+                href="https://packagist.org/packages/sensasi-delight/material-blade"
+                target="_blank"
+            >Packagist <x-mbc::icon
+                    style="font-size: inherit"
+                    icon="open_in_new"
+                /></a>. You can
             install
             it via Composer by running the following command in your Laravel project:
         </x-mbc::typography>
@@ -120,10 +141,13 @@
 
         <x-mbc::typography>
             Material Blade is open-source software licensed under the <a
-               href="https://github.com/sensasi-delight/material-blade/blob/main/LICENSE"
-               target="_blank">MIT license
-                <x-mbc::icon style="font-size: inherit"
-                             icon="open_in_new" /></a>.
+                href="https://github.com/sensasi-delight/material-blade/blob/main/LICENSE"
+                target="_blank"
+            >MIT license
+                <x-mbc::icon
+                    style="font-size: inherit"
+                    icon="open_in_new"
+                /></a>.
         </x-mbc::typography>
 
     </section>
@@ -134,15 +158,23 @@
         </x-h2>
 
         <x-mbc::typography>
-            If you have any questions or suggestions, please feel free to contact me at <a href="mailto:zainadam@gmail.com"
-               target="_blank">zainadam@gmail.com <x-mbc::icon style="font-size: inherit"
-                             icon="open_in_new" /></a>.
+            If you have any questions or suggestions, please feel free to contact me at <a
+                href="mailto:zainadam@gmail.com"
+                target="_blank"
+            >zainadam@gmail.com <x-mbc::icon
+                    style="font-size: inherit"
+                    icon="open_in_new"
+                /></a>.
         </x-mbc::typography>
 
         <x-mbc::typography>
-            You can also submit new issue on <a href="https://github.com/sensasi-delight/material-blade/issues/new"
-               target="_blank">GitHub <x-mbc::icon style="font-size: inherit"
-                             icon="open_in_new" /></a>.
+            You can also submit new issue on <a
+                href="https://github.com/sensasi-delight/material-blade/issues/new"
+                target="_blank"
+            >GitHub <x-mbc::icon
+                    style="font-size: inherit"
+                    icon="open_in_new"
+                /></a>.
         </x-mbc::typography>
     </section>
 @endsection

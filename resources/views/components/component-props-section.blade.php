@@ -5,7 +5,9 @@
         Properties
     </x-h2>
 
-    <x-mbc::data-table class="fullwidth"
-                       :header="['Name', 'Type', 'Default', 'Description']"
-                       :data="$data" />
+    <x-mbc::data-table
+        class="fullwidth"
+        :header="['Name', 'Type', 'Default', 'Description']"
+        :data="$data"
+    />
 </section>
