@@ -179,16 +179,18 @@
                             href="#{{ strtolower(str_replace(' ', '-', $i)) }}"
                             element="a"
                             :activated="$loop->first"
+                            style="font-weight: unset;"
                         >
                             {{ $i }}
                         </x-mbc::list-item>
 
-                        <x-mbc::list>
+                        <x-mbc::list class="mbc-p-0">
                             @foreach ($heading as $subHeading)
                     <li>
                         <x-mbc::list-item
                             href="#{{ strtolower(str_replace(' ', '-', $subHeading)) }}"
                             element="a"
+                            style="padding-left: 24px; font-weight: unset;"
                         >
                             {{ $subHeading }}
                         </x-mbc::list-item>
@@ -201,6 +203,7 @@
             href="#{{ strtolower(str_replace(' ', '-', $heading)) }}"
             element="a"
             :activated="$loop->first"
+            style="font-weight: unset;"
         >
             {{ $heading }}
         </x-mbc::list-item>
@@ -214,3 +217,4 @@
 </body>
 
 </html>
+
