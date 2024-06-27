@@ -144,7 +144,7 @@
         <x-mbc::list>
             @isset($props)
                 @php
-                    array_push($headings, 'Props');
+                    array_push($headings, 'Properties');
                 @endphp
             @endisset
 
@@ -155,14 +155,33 @@
             @endisset
 
             @foreach ($headings as $i => $heading)
-                <li>
-                    <x-mbc::list-item href="#{{ strtolower(str_replace(' ', '-', $heading)) }}"
-                                      element="a"
-                                      :activated="$loop->first">
-                        {{ $heading }}
-                    </x-mbc::list-item>
-                </li>
-            @endforeach
+                @if (is_array($heading))
+                    <li>
+                        <x-mbc::list-item href="#{{ strtolower(str_replace(' ', '-', $i)) }}"
+                                          element="a"
+                                          :activated="$loop->first">
+                            {{ $i }}
+                        </x-mbc::list-item>
+
+                        <x-mbc::list>
+                            @foreach ($heading as $subHeading)
+                    <li>
+                        <x-mbc::list-item href="#{{ strtolower(str_replace(' ', '-', $subHeading)) }}"
+                                          element="a">
+                            {{ $subHeading }}
+                        </x-mbc::list-item>
+                    </li>
+                @endforeach
+        </x-mbc::list>
+        </li>
+    @else
+        <x-mbc::list-item href="#{{ strtolower(str_replace(' ', '-', $heading)) }}"
+                          element="a"
+                          :activated="$loop->first">
+            {{ $heading }}
+        </x-mbc::list-item>
+        @endif
+        @endforeach
         </x-mbc::list>
     </x-mbc::drawer>
 
