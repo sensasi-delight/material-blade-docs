@@ -65,6 +65,26 @@
             margin: 0 !important;
             height: fit-content !important;
         }
+
+        h2,
+        h3 {
+            scroll-margin: 32px;
+        }
+
+        .header-anchor {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .header-anchor .material-icons {
+            display: none;
+            color: var(--mdc-theme-text-secondary-on-background);
+        }
+
+        h2:hover .material-icons,
+        h3:hover .material-icons {
+            display: inline-block;
+        }
     </style>
 </head>
 
@@ -131,11 +151,17 @@
 
             @yield('content')
 
-            @isset($props)
-                <x-component-props-section :data="$props" />
+            @isset($componentsProps)
+                @php
+                    $headings['Properties'] = array_keys($componentsProps);
+                @endphp
+                <x-component-props-section :componentsProps="$componentsProps" />
             @endisset
 
             @isset($referenceLinks)
+                @php
+                    array_push($headings, 'References');
+                @endphp
                 <x-references-section :links="$referenceLinks" />
             @endisset
         </section>
@@ -153,25 +179,15 @@
 
     <x-mbc::drawer class="right-sidebar">
         <x-mbc::typography
-            style="font-weight: bold;"
+            variant="caption"
+            element="div"
+            style="font-weight: 500; text-transform: uppercase;"
             disableGutter
         >
             Contents
         </x-mbc::typography>
 
         <x-mbc::list>
-            @isset($props)
-                @php
-                    array_push($headings, 'Properties');
-                @endphp
-            @endisset
-
-            @isset($referenceLinks)
-                @php
-                    array_push($headings, 'References');
-                @endphp
-            @endisset
-
             @foreach ($headings as $i => $heading)
                 @if (is_array($heading))
                     <li>
@@ -217,4 +233,3 @@
 </body>
 
 </html>
-
