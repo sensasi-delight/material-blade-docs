@@ -1,4 +1,3 @@
-{{-- TODO: rename to component preview --}}
 <div class="mbc-mx-8">
     <x-mbc::card
         variant="outlined"
