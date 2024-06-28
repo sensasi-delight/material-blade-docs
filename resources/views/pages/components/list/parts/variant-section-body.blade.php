@@ -1,5 +1,3 @@
-{{-- TODO: rename file to variant section --}}
-
 <x-mbc::typography>
     The <code>List</code> component has <code>variant</code> attribute that supports two variants:
     <code>single-line</code> and <code>two-line</code>. The default variant is <code>single-line</code> as you can
