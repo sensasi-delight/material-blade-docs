@@ -2,13 +2,13 @@
     $pageData = [
         'title' => 'Getting Started',
         'referenceLinks' => [
-            'https://material.io',
+            'https://m2.material.io',
             'https://mui.com/material-ui/',
             'https://material-components.github.io/material-web/demos/',
             'https://material-components.github.io/material-components-web-catalog/',
             'https://github.com/material-components/material-components-web/tree/v14.0.0',
         ],
-        'headings' => ['Installation', 'License', 'Contact'],
+        'headings' => ['Installation', 'Contributing', 'License', 'Contact'],
     ];
 @endphp
 
@@ -44,7 +44,9 @@
             /></a>.
     </x-mbc::typography>
 
-    <pre><code class="language-php">// from this
+    <div class="mbc-mx-8">
+        {{-- prettier-ignore-start --}}
+    <pre class="src-code show"><code class="language-php">// from this
 &lt;button class="mdc-button">
     &lt;span class="mdc-button__ripple">&lt;/span>
     &lt;span class="mdc-button__label">
@@ -54,7 +56,8 @@
 
 // to this
 &lt;x-mbc::button label="This is a Button"/></code></pre>
-
+{{-- prettier-ignore-end --}}
+    </div>
     <x-mbc::typography>
         General knowledge of Laravel and Blade components i'ts required for using this package. However, the fully
         understand about this feature is helpful for optimizing the usages of this package. If you never heard about <a
@@ -96,7 +99,7 @@
             it via Composer by running the following command in your Laravel project:
         </x-mbc::typography>
 
-        <pre><code class="language-bash">composer require sensasi-delight/material-blade</code></pre>
+        <pre class="src-code show"><code class="language-bash">composer require sensasi-delight/material-blade</code></pre>
 
         <x-mbc::typography>
             After installing the Material Blade package, you can start using the components by including the
@@ -106,7 +109,9 @@
             Web CSS and JavaScript files.
         </x-mbc::typography>
 
-        <pre><code class="language-html">&lt;!DOCTYPE html>
+        <div class="mbc-mx-8">
+            {{-- prettier-ignore-start --}}
+            <pre class="src-code show"><code class="language-html">&lt;!DOCTYPE html>
 &lt;html lang="en">
 
 &lt;head>
@@ -128,9 +133,27 @@
 &lt;/body>
 
 &lt;/html></code></pre>
+{{-- prettier-ignore-end --}}
+        </div>
 
         <x-mbc::typography>
             You should now be able to use Material Blade components in your Laravel Blade views.
+        </x-mbc::typography>
+    </section>
+
+    <section>
+        <x-h2>
+            Contributing
+        </x-h2>
+
+        <x-mbc::typography>
+            If you would like to contribute to this project, please read the <a
+                href="https://github.com/sensasi-delight/material-blade/blob/main/CONTRIBUTING.md"
+                target="_blank"
+            >CONTRIBUTING.md <x-mbc::icon
+                    style="font-size: inherit"
+                    icon="open_in_new"
+                /></a> file.
         </x-mbc::typography>
     </section>
 
@@ -149,7 +172,6 @@
                     icon="open_in_new"
                 /></a>.
         </x-mbc::typography>
-
     </section>
 
     <section>
