@@ -2,69 +2,94 @@
     $pageData = [
         'title' => 'List',
         'description' => 'Lists are continuous, vertical indexes of text or images.',
-        'headings' => ['Variants' => ['Single Line', 'Two Line'], 'Dense List'],
+        'headings' => ['Basic', 'Variant', 'Divider', 'Dense', 'Leading and Trailing'],
         'referenceLinks' => [
+            'https://mui.com/material-ui/react-list/',
             'https://m2.material.io/components/lists/web',
             'https://material-components.github.io/material-components-web-catalog/#/component/list',
             'https://github.com/material-components/material-components-web/tree/v14.0.0/packages/mdc-list',
-            'https://mui.com/material-ui/react-list/',
         ],
-        'props' => [
-            ['dense', 'bool', 'false', 'Make the component appears densed.'],
-            [
-                'icon',
-                'string',
-                '',
-                'Icon name from <a href="https://material.io/resources/icons/?style=baseline">Material Icons</a>.',
+        'componentsProps' => [
+            'list' => [
+                ['avatar', 'boolean', 'false', 'If true, the leading image or icon will be circular.'],
+                ['dense', 'boolean', 'false', 'Make the component appears densed.'],
+                ['element', 'string', 'ul', 'The HTML element to use.'],
+                ['disableRipple', 'boolean', 'false', 'If true, the ripple effect will be disabled.'],
+                ['variant', 'single-line | two-line', 'single-line', 'The variant to use.'],
             ],
-            ['variant', 'single-line | two-line | padded', 'single-line', ''],
-            ['wrapper', 'boolean', 'false', 'Wraps the list items in a container.'],
+            'list-item' => [
+                ['activated', 'boolean', 'false', 'If true, the list item will be activated.'],
+                ['disabled', 'boolean', 'false', 'If true, the list item will be disabled.'],
+                ['selected', 'boolean', 'false', 'If true, the list item will be selected.'],
+                ['disableRipple', 'boolean', 'false', 'If true, the ripple effect will be disabled.'],
+                ['primary', 'string', '', 'The primary text for <code>two-line</code> variant.'],
+                ['secondary', 'string', '', 'The secondary text for <code>two-line</code> variant.'],
+                ['element', 'string', 'li', 'The HTML element to use.'],
+                [
+                    'startIcon',
+                    'url string or icon string format',
+                    '',
+                    'The leading icon or image. Icon string format can be found in the <a href="#">Icon component page</a>.',
+                ],
+                [
+                    'endIcon',
+                    'url string or icon string format',
+                    '',
+                    'The trailing icon or image. Icon string format can be found in the <a href="#">Icon component page</a>.',
+                ],
+            ],
+            'list-divider' => [['padded', 'bool', 'false', 'If true, the divider will have a padding.']],
         ],
     ];
 @endphp
 
 @extends('layouts.docs', $pageData)
 
+@section('description')
+    <x-mbc::typography>
+        Lists are continuous, vertical indexes of text or images.
+    </x-mbc::typography>
+@endsection
+
 @section('content')
     <section>
         <x-h2>
-            Variants
+            Basic
         </x-h2>
 
-        @include('pages.components.list.parts.single-line-section')
-
-        @include('pages.components.list.parts.two-line-section')
-
+        @include('pages.components.list.parts.basic-section-body')
     </section>
 
     <section>
         <x-h2>
-            Dense List
+            Variant
         </x-h2>
 
-        <x-code-preview>
-            <x-mbc::list
-                dense
-                disableRipple
-            >
-                <x-mbc::list-item>
-                    Item 1
-                </x-mbc::list-item>
+        @include('pages.components.list.parts.variant-section-body')
+    </section>
 
-                <x-mbc::list-item icon="favorite">
-                    Item 2
-                </x-mbc::list-item>
+    <section>
+        <x-h2>
+            Divider
+        </x-h2>
 
-                <x-mbc::list-item icon="inbox">
-                    Item 3
-                </x-mbc::list-item>
+        @include('pages.components.list.parts.divider-section-body')
+    </section>
 
-                <x-mbc::list-divider />
+    <section>
+        <x-h2>
+            Dense
+        </x-h2>
 
-                <x-mbc::list-item>
-                    Item 4
-                </x-mbc::list-item>
-            </x-mbc::list>
-        </x-code-preview>
+        @include('pages.components.list.parts.dense-list-section-body')
+    </section>
+
+    <section>
+        <x-h2>
+            Leading and Trailing
+        </x-h2>
+
+        @include('pages.components.list.parts.leading-and-trailing-section-body')
+
     </section>
 @endsection
