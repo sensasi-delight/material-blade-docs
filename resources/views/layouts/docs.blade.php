@@ -117,10 +117,9 @@
             @foreach ($docRoutes as $section => $routes)
                 @if ($routes->count() > 1)
                     <x-mbc::typography
-                        class="mbc-px-2"
+                        class="mbc-px-2 mbc-mt-2 mbc-mb-1"
                         style="text-transform: uppercase; font-weight: bold;"
                         variant="caption"
-                        disableGutter
                         element="div"
                     >
                         {{ ucfirst($section) }}
@@ -132,6 +131,7 @@
                         href="{{ route($route) }}"
                         element="a"
                         :activated="request()->route()->named($route)"
+                        style="height: 32px; margin-bottom: 0; margin-top: 0;"
                     >
                         {{ ucfirst(str_replace('-', ' ', str_replace("{$section}.", '', $route))) }}
                     </x-mbc::list-item>
