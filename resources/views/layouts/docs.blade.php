@@ -40,6 +40,7 @@
             display: none;
             margin: 0 !important;
             animation: fade_in_show 0.5s ease-in-out;
+            border-radius: var(--mdc-shape-medium, 4px);
         }
 
         .src-code.show {

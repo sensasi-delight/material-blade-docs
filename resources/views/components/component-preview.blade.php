@@ -51,7 +51,6 @@
         <pre
             id="{{ $id }}"
             class="src-code"
-            style="border-radius: var(--mdc-shape-medium, 4px);"
             @class(['show' => true])
         ><code class="language-php">{{ $code }}</code></pre>
     @endisset
@@ -59,7 +58,6 @@
     @isset($codeSummary)
         <pre
             id="{{ $id }}-summary"
-            style="border-radius: var(--mdc-shape-medium, 4px);"
             @class(['src-code', 'show' => true])
         ><code class="language-php">{{ $codeSummary }}</code></pre>
     @endisset
