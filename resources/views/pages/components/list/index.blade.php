@@ -1,7 +1,6 @@
 @php
     $pageData = [
         'title' => 'List',
-        'description' => 'Lists are continuous, vertical indexes of text or images.',
         'headings' => ['Basic', 'Variant', 'Divider', 'Dense', 'Leading and Trailing'],
         'referenceLinks' => [
             'https://mui.com/material-ui/react-list/',
