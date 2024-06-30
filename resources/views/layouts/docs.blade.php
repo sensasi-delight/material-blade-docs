@@ -1,93 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-    <title>{{ $title }} &mdash; {{ config('app.name') }}</title>
-
-    <link
-        href="https://unpkg.com/prismjs@v1.x/themes/prism-tomorrow.css"
-        rel="stylesheet"
-    />
-    <x-mbc::_assets />
-
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        main {
-            margin-right: calc(180px + 32px);
-            margin-left: calc(256px + 32px);
-        }
-
-        @keyframes fade_in_show {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        .src-code {
-            display: none;
-            margin: 0 !important;
-            animation: fade_in_show 0.5s ease-in-out;
-            border-radius: var(--mdc-shape-medium, 4px);
-        }
-
-        .src-code.show {
-            display: block;
-        }
-
-        section {
-            margin-bottom: 32px;
-        }
-
-        .right-sidebar {
-            padding: calc(2 * var(--mbc-theme-scaling-factor));
-            padding-top: calc(10 * var(--mbc-theme-scaling-factor));
-            position: fixed;
-            height: 100vh !important;
-            width: 180px;
-            top: 0;
-            right: 0;
-            overflow-y: auto;
-        }
-
-        .right-sidebar a {
-            margin: 0 !important;
-            height: fit-content !important;
-        }
-
-        h2,
-        h3 {
-            scroll-margin: 32px;
-        }
-
-        .header-anchor {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        .header-anchor .material-icons {
-            display: none;
-            color: var(--mdc-theme-text-secondary-on-background);
-        }
-
-        h2:hover .material-icons,
-        h3:hover .material-icons {
-            display: inline-block;
-        }
-    </style>
-</head>
+@include('layouts.parts.head', [
+    'title' => $title,
+    ...$metas,
+])
 
 <body>
     <x-mbc::drawer
@@ -114,6 +31,7 @@
                         return explode('.', $route)[0];
                     });
             @endphp
+
             @foreach ($docRoutes as $section => $routes)
                 @if ($routes->count() > 1)
                     <x-mbc::typography

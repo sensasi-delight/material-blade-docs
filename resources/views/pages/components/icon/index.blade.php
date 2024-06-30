@@ -1,6 +1,10 @@
 @php
     $pageData = [
         'title' => 'Icon',
+        'metas' => [
+            'description' =>
+                'Icons are symbols that represent an object or action. They are used to visually communicate core parts of the product and available actions. Icons are used in buttons, lists, inputs, and more. Icons can be used with or without text.',
+        ],
         'headings' => ['Basic', 'Variant', 'Font Size', 'Color'],
         'referenceLinks' => [
             'https://m2.material.io/design/iconography/system-icons.html',
@@ -41,11 +45,7 @@
 @extends('layouts.docs', $pageData)
 
 @section('description')
-    <x-mbc::typography>
-        Icons are symbols that represent an object or action. They are used to visually communicate core parts of the
-        product and available actions. Icons are used in buttons, lists, inputs, and more. Icons can be used with or without
-        text.
-    </x-mbc::typography>
+    <x-mbc::typography>{{ $pageData['metas']['description'] }}</x-mbc::typography>
 @endsection
 
 @section('content')
