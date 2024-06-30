@@ -9,6 +9,7 @@
                 <a
                     href="{{ $link }}"
                     target="_blank"
+                    rel="noopener noreferrer nofollow"
                 >
                     <x-mbc::typography
                         class="mbc-m-0"
@@ -16,7 +17,7 @@
                     >
                         {{ $link }} <x-mbc::icon
                             style="font-size: inherit;"
-                            icon="open_in_new"
+                            name="open_in_new"
                         />
                     </x-mbc::typography>
                 </a>

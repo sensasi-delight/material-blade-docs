@@ -22,7 +22,7 @@
         >Material Design
             components <x-mbc::icon
                 style="font-size: inherit"
-                icon="open_in_new"
+                name="open_in_new"
             /></a> as <a
             href="https://laravel.com/docs/blade#components"
             target="_blank"
@@ -30,7 +30,7 @@
             Laravel
             Blade components <x-mbc::icon
                 style="font-size: inherit"
-                icon="open_in_new"
+                name="open_in_new"
             /></a>. Material Blade aims to
         make
         UI/UX development of your Laravel app faster, inspired by <a
@@ -40,7 +40,7 @@
             (Material
             UI) <x-mbc::icon
                 style="font-size: inherit"
-                icon="open_in_new"
+                name="open_in_new"
             /></a>.
     </x-mbc::typography>
 
@@ -67,7 +67,7 @@
             Laravel
             Blade components <x-mbc::icon
                 style="font-size: inherit"
-                icon="open_in_new"
+                name="open_in_new"
             /></a>, it is a good start to
         understand it and plays with Material Blade package.
     </x-mbc::typography>
@@ -93,7 +93,7 @@
                 target="_blank"
             >Packagist <x-mbc::icon
                     style="font-size: inherit"
-                    icon="open_in_new"
+                    name="open_in_new"
                 /></a>. You can
             install
             it via Composer by running the following command in your Laravel project:
@@ -152,7 +152,7 @@
                 target="_blank"
             >CONTRIBUTING.md <x-mbc::icon
                     style="font-size: inherit"
-                    icon="open_in_new"
+                    name="open_in_new"
                 /></a> file.
         </x-mbc::typography>
     </section>
@@ -169,7 +169,7 @@
             >MIT license
                 <x-mbc::icon
                     style="font-size: inherit"
-                    icon="open_in_new"
+                    name="open_in_new"
                 /></a>.
         </x-mbc::typography>
     </section>
@@ -185,7 +185,7 @@
                 target="_blank"
             >zainadam@gmail.com <x-mbc::icon
                     style="font-size: inherit"
-                    icon="open_in_new"
+                    name="open_in_new"
                 /></a>.
         </x-mbc::typography>
 
@@ -195,7 +195,7 @@
                 target="_blank"
             >GitHub <x-mbc::icon
                     style="font-size: inherit"
-                    icon="open_in_new"
+                    name="open_in_new"
                 /></a>.
         </x-mbc::typography>
     </section>
