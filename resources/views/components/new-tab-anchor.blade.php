@@ -6,4 +6,3 @@
         style="font-size: inherit"
         name="open_in_new"
     /></a>
-

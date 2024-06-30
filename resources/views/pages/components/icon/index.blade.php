@@ -336,4 +336,3 @@ fontSize="5rem"
         </x-component-preview>
     </section>
 @endsection
-

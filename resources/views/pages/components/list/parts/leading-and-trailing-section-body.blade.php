@@ -110,4 +110,3 @@
 &lt;/x-mbc::list></x-slot:code>
     {{-- prettier-ignore-end --}}
 </x-component-preview>
-
