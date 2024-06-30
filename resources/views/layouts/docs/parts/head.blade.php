@@ -49,6 +49,11 @@
     >
 
     <meta
+        property="twitter:description"
+        content="{{ $description }}"
+    >
+
+    <meta
         name="referrer"
         content="unsafe-url"
     >
