@@ -68,8 +68,6 @@
         href="{{ url()->current() }}"
     >
 
-    <base href="{{ url('/') }}">
-
     <meta
         name="application-name"
         content="{{ config('app.name') }}"
