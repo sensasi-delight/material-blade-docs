@@ -2,6 +2,9 @@
     $pageData = [
         'title' => 'List',
         'headings' => ['Basic', 'Variant', 'Divider', 'Dense', 'Leading and Trailing'],
+        'metas' => [
+            'description' => 'Lists are continuous, vertical indexes of text or images.',
+        ],
         'referenceLinks' => [
             'https://mui.com/material-ui/react-list/',
             'https://m2.material.io/components/lists/web',
