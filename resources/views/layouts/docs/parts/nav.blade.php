@@ -2,12 +2,12 @@
     style="position: fixed; top:0; left: 0; height: 100vh; overflow-y: auto;"
     subtitle="Documentation"
 >
-    <x-slot:title>
+    @slot('title')
         <a
             href="{{ route('index') }}"
             style="color: inherit; text-decoration: none;"
         >Material Blade</a>
-    </x-slot:title>
+    @endslot
 
     <x-mbc::list
         element="nav"

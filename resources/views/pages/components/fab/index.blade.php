@@ -48,10 +48,8 @@
         <x-component-preview>
             <x-mbc::fab icon="favorite" />
 
-            @slot('codeSummary')
-                {{-- prettier-ignore-start --}}
-&lt;x-mbc::fab icon="favorite" />
-                {{-- prettier-ignore-end --}}
+            @slot('code-summary')
+                &lt;x-mbc::fab icon="favorite" />
             @endslot
         </x-component-preview>
     </section>
@@ -75,7 +73,7 @@
                 {{-- prettier-ignore-start --}}
 &lt;x-mbc::fab icon="add" variant="regular" />
 &lt;x-mbc::fab icon="add" variant="mini" />
-                {{-- prettier-ignore-end --}}
+{{-- prettier-ignore-end--}}
             @endslot
         </x-component-preview>
     </section>
@@ -98,9 +96,8 @@
                 {{-- prettier-ignore-start --}}
 &lt;x-mbc::fab label="Order" />
 &lt;x-mbc::fab icon="add" label="Create" />
-                {{-- prettier-ignore-end --}}
+{{-- prettier-ignore-end--}}
             @endslot
         </x-component-preview>
     </section>
 @endsection
-

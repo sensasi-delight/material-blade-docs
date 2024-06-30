@@ -86,7 +86,7 @@
 
 // set the button text via "label" attribute
 &lt;x-mbc::button label="Anynomus Component" />
-            {{-- prettier-ignore-end --}}
+{{-- prettier-ignore-end--}}
             @endslot
         </x-component-preview>
     </section>
@@ -144,7 +144,7 @@
     label="Outlined"
     variant="outlined"
 />
-                {{-- prettier-ignore-end --}}
+{{-- prettier-ignore-end--}}
             @endslot
         </x-component-preview>
     </section>
@@ -188,7 +188,7 @@
     label="Div Button"
     htmlTag="div"
 />
-                {{-- prettier-ignore-end --}}
+{{-- prettier-ignore-end--}}
             @endslot
         </x-component-preview>
     </section>
@@ -238,7 +238,7 @@
     startIcon="noise_control_off"
     endIcon="disabled_by_default"
 />
-                {{-- prettier-ignore-end --}}
+{{-- prettier-ignore-end--}}
             @endslot
         </x-component-preview>
 
@@ -292,9 +292,8 @@
     :startIcon="['noise_control_off', 'round']"
     :endIcon="['disabled_by_default', 'sharp']"
 />
-                {{-- prettier-ignore-end --}}
+{{-- prettier-ignore-end--}}
             @endslot
         </x-component-preview>
     </section>
 @endsection
-
