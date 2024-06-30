@@ -3113,12 +3113,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensasi-delight/material-blade.git",
-                "reference": "5fe14258e6c63fb8d41d9c5bfe1dea2a0af28e89"
+                "reference": "3fad1229d2e65de61d892c311758816be419f902"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensasi-delight/material-blade/zipball/5fe14258e6c63fb8d41d9c5bfe1dea2a0af28e89",
-                "reference": "5fe14258e6c63fb8d41d9c5bfe1dea2a0af28e89",
+                "url": "https://api.github.com/repos/sensasi-delight/material-blade/zipball/3fad1229d2e65de61d892c311758816be419f902",
+                "reference": "3fad1229d2e65de61d892c311758816be419f902",
                 "shasum": ""
             },
             "require": {
@@ -3166,7 +3166,7 @@
                 "issues": "https://github.com/sensasi-delight/material-blade/issues",
                 "source": "https://github.com/sensasi-delight/material-blade/tree/main"
             },
-            "time": "2024-06-30T21:17:13+00:00"
+            "time": "2024-06-30T22:51:19+00:00"
         },
         {
             "name": "symfony/clock",
