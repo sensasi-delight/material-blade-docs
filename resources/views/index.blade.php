@@ -90,13 +90,19 @@
                             <x-mbc::CardActions>
 
                                 <!-- Button Actions -->
-                                <x-slot name="buttons">
-                                    <x-mbc::Button label="Read" />
-                                    <x-mbc::Button label="Bookmark" />
-                                </x-slot>
+                                @slot('buttons')
+                                    <x-mbc::button
+                                        variant="text"
+                                        label="Read"
+                                    />
+                                    <x-mbc::button
+                                        variant="text"
+                                        label="Bookmark"
+                                    />
+                                @endslot
 
                                 <!-- Icon Button Actions -->
-                                <x-slot name="iconButtons">
+                                @slot('iconButtons')
                                     <x-mbc::icon-button
                                         title="Add to favorites"
                                         aria-label="Add to favorites"
@@ -114,7 +120,7 @@
                                         aria-label="More options"
                                         icon="more_vert"
                                     />
-                                </x-slot>
+                                @endslot
                             </x-mbc::CardActions>
                         </x-mbc::Card>
 
@@ -269,7 +275,7 @@
                                     />
 
                                     <x-mbc::CardActions>
-                                        <x-slot:icon-buttons>
+                                        @slot('icon-buttons')
                                             <x-mbc::icon-button
                                                 title="Previous"
                                                 icon="skip_previous"
@@ -283,7 +289,7 @@
                                                 title="Next"
                                                 icon="skip_next"
                                             />
-                                        </x-slot:icon-buttons>
+                                        @endslot
                                     </x-mbc::CardActions>
                                 </div>
                             </div>

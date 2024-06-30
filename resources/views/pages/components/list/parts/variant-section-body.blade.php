@@ -26,17 +26,22 @@
         />
     </x-mbc::list>
 
-    {{-- prettier-ignore-start --}}
-    <x-slot:code-summary>&lt;x-mbc::list variant="two-line">
+    @slot('code-summary')
+        {{-- prettier-ignore-start --}}
+&lt;x-mbc::list variant="two-line">
     &lt;x-mbc::list-item
         primary="Item 1"
         secondary="secondary line"
     />
 
     // other items
-&lt;/x-mbc::list></x-slot:code-summary>
+&lt;/x-mbc::list>
+{{-- prettier-ignore-end --}}
+    @endslot
 
-<x-slot:code>&lt;x-mbc::list variant="two-line">
+    @slot('code')
+        {{-- prettier-ignore-start --}}
+&lt;x-mbc::list variant="two-line">
     &lt;x-mbc::list-item
         primary="Item 1"
         secondary="secondary line"
@@ -48,6 +53,7 @@
         primary="Item 3"
         secondary="secondary line"
     />
-&lt;/x-mbc::list></x-slot:code>
-    {{-- prettier-ignore-end --}}
+&lt;/x-mbc::list>
+{{-- prettier-ignore-end --}}
+    @endslot
 </x-component-preview>

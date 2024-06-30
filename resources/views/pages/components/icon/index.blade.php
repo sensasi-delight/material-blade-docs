@@ -69,17 +69,21 @@
                 />
             </div>
 
-            <x-slot:code-summary>&lt;x-mbc::icon name="icon name | [icon name, variant]" ... /></x-slot:code-summary>
+            @slot('code-summary')
+                &lt;x-mbc::icon name="icon name | [icon name, variant]" ... />
+            @endslot
 
-            {{-- prettier-ignore-start --}}
-            <x-slot:code>&lt;x-mbc::icon name="home" />
+            @slot('code')
+                {{-- prettier-ignore-start --}}
+&lt;x-mbc::icon name="home" />
 &lt;x-mbc::icon name="['settings', 'outlined']" />
 &lt;x-mbc::icon :name="['delete', 'round']" />
 &lt;x-mbc::icon
     name="lock"
     variant="two-tone"
-/></x-slot:code>
-                {{-- prettier-ignore-end --}}
+/>
+{{-- prettier-ignore-end--}}
+            @endslot
         </x-component-preview>
 
         <x-mbc::typography>
@@ -144,10 +148,13 @@
                 />
             </div>
 
-            <x-slot:code-summary>&lt;x-mbc::icon variant="icon variant" ... /></x-slot:code-summary>
+            @slot('code-summary')
+                &lt;x-mbc::icon variant="icon variant" ... />
+            @endslot
 
-            {{-- prettier-ignore-start --}}
-            <x-slot:code>&lt;x-mbc::icon name="home" />
+            @slot('code')
+                {{-- prettier-ignore-start --}}
+&lt;x-mbc::icon name="home" />
 
 &lt;x-mbc::icon
 name="home"
@@ -172,8 +179,9 @@ variant="sharp"
 &lt;x-mbc::icon
 name="home"
 variant="two-tone"
-/></x-slot:code>
-            {{-- prettier-ignore-end --}}
+/>
+{{-- prettier-ignore-end--}}
+            @endslot
         </x-component-preview>
     </section>
 
@@ -212,30 +220,38 @@ variant="two-tone"
                 />
             </div>
 
-            <x-slot:code-summary>&lt;x-mbc::icon fontSize="font size" ... /></x-slot:code-summary>
+            @slot('code-summary')
+                &lt;x-mbc::icon fontSize="font size" ... />
+            @endslot
 
-            {{-- prettier-ignore-start --}}
-            <x-slot:code>&lt;x-mbc::icon
-name="home"
-fontSize="1rem"
-/>
+            @slot('code')
+                {{-- prettier-ignore-start --}}
 &lt;x-mbc::icon
-name="home"
-fontSize="2rem"
+    name="home"
+    fontSize="1rem"
 />
+
 &lt;x-mbc::icon
-name="home"
-fontSize="3rem"
+    name="home"
+    fontSize="2rem"
 />
+
 &lt;x-mbc::icon
-name="home"
-fontSize="4rem"
+    name="home"
+    fontSize="3rem"
 />
+
 &lt;x-mbc::icon
-name="home"
-fontSize="5rem"
-/></x-slot:code>
-            {{-- prettier-ignore-end --}}
+    name="home"
+    fontSize="4rem"
+/>
+
+&lt;x-mbc::icon
+    name="home"
+    fontSize="5rem"
+/>
+{{-- prettier-ignore-end--}}
+            @endslot
         </x-component-preview>
     </section>
 
@@ -288,10 +304,13 @@ fontSize="5rem"
                 />
             </div>
 
-            <x-slot:code-summary>&lt;x-mbc::icon color="color name" ... /></x-slot:code-summary>
+            @slot('code-summary')
+                &lt;x-mbc::icon color="css color | mbc theme color" ... />
+            @endslot
 
-            {{-- prettier-ignore-start --}}
-            <x-slot:code>&lt;x-mbc::icon name="home" />
+            @slot('code')
+                {{-- prettier-ignore-start --}}
+&lt;x-mbc::icon name="home" />
 
 &lt;x-mbc::icon
     name="bluetooth"
@@ -331,8 +350,9 @@ fontSize="5rem"
 &lt;x-mbc::icon
     name="colorize"
     color="aqua"
-/></x-slot:code>
-            {{-- prettier-ignore-end --}}
+/>
+{{-- prettier-ignore-end--}}
+            @endslot
         </x-component-preview>
     </section>
 @endsection

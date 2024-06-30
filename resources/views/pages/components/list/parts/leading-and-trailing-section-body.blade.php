@@ -20,8 +20,9 @@
         </x-mbc::list-item>
     </x-mbc::list>
 
-    {{-- prettier-ignore-start --}}
-    <x-slot:code>&lt;x-mbc::list>
+    @slot('code-summary')
+        {{-- prettier-ignore-start --}}
+&lt;x-mbc::list>
     &lt;x-mbc::list-item startIcon="star">
         Leading Icon
     &lt;/x-mbc::list-item>
@@ -35,9 +36,10 @@
         endIcon="bluetooth"
     >
         Both
-    &lt;    /x-mbc::list-item>
-&lt;/x-mbc::list></x-slot:code>
-    {{-- prettier-ignore-end --}}
+    &lt;/x-mbc::list-item>
+&lt;/x-mbc::list>
+{{-- prettier-ignore-end --}}
+    @endslot
 </x-component-preview>
 
 <x-mbc::typography>
@@ -60,9 +62,11 @@
         >
             Leading and Trailing Image
         </x-mbc::list-item>
+    </x-mbc::list>
 
+    @slot('code-summary')
         {{-- prettier-ignore-start --}}
-    <x-slot:code>&lt;x-mbc::list>
+&lt;x-mbc::list>
     &lt;x-mbc::list-item startIcon="https://picsum.photos/id/1/200">
         Leading Image
     &lt;/x-mbc::list-item>
@@ -77,9 +81,9 @@
     >
         Both
     &lt;/x-mbc::list-item>
-&lt;/x-mbc::list></x-slot:code>
-    {{-- prettier-ignore-end --}}
-    </x-mbc::list>
+&lt;/x-mbc::list>
+{{-- prettier-ignore-end --}}
+    @endslot
 </x-component-preview>
 
 <x-mbc::typography>
@@ -98,8 +102,9 @@
         </x-mbc::list-item>
     </x-mbc::list>
 
-    {{-- prettier-ignore-start --}}
-    <x-slot:code>&lt;x-mbc::list avatar>
+    @slot('code-summary')
+        {{-- prettier-ignore-start --}}
+&lt;x-mbc::list avatar>
     &lt;x-mbc::list-item startIcon="folder">
         Avatar Icon
     &lt;/x-mbc::list-item>
@@ -107,6 +112,7 @@
     &lt;x-mbc::list-item startIcon="https://picsum.photos/id/64/200">
         Avatar Image
     &lt;/x-mbc::list-item>
-&lt;/x-mbc::list></x-slot:code>
-    {{-- prettier-ignore-end --}}
+&lt;/x-mbc::list>
+{{-- prettier-ignore-end --}}
+    @endslot
 </x-component-preview>

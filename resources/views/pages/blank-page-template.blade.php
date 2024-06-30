@@ -44,4 +44,3 @@
         </x-mbc::typography>
     </section>
 @endsection
-

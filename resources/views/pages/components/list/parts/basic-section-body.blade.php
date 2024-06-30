@@ -22,17 +22,22 @@
         </x-mbc::list-item>
     </x-mbc::list>
 
-    {{-- prettier-ignore-start --}}
-    <x-slot:code-summary>&lt;x-mbc::list>
+    @slot('code-summary')
+        {{-- prettier-ignore-start --}}
+&lt;x-mbc::list>
     &lt;x-mbc::list-item>
         Item 1
     &lt;/x-mbc::list-item>
 
     // Other list items
     // ....
-&lt;/x-mbc::list></x-slot:code-summary>
+&lt;/x-mbc::list>
+{{-- prettier-ignore-end --}}
+    @endslot
 
-    <x-slot:code>&lt;x-mbc::list>
+    @slot('code')
+        {{-- prettier-ignore-start --}}
+&lt;x-mbc::list>
     &lt;x-mbc::list-item>
         Item 1
     &lt;/x-mbc::list-item>
@@ -44,7 +49,7 @@
     &lt;x-mbc::list-item>
         Item 3
     &lt;/x-mbc::list-item>
-&lt;/x-mbc::list></x-slot:code>
-        {{-- prettier-ignore-end --}}
-
+&lt;/x-mbc::list>
+{{-- prettier-ignore-end --}}
+    @endslot
 </x-component-preview>
