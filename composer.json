@@ -11,7 +11,8 @@
         "php": "^8.2",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9",
-        "sensasi-delight/material-blade": "dev-main"
+        "sensasi-delight/material-blade": "dev-main",
+        "sentry/sentry-laravel": "^4.6"
     },
     "require-dev": {
         "laravel/pint": "^1.16",
