@@ -2,7 +2,7 @@
     <x-mbc::card
         variant="outlined"
         class="mbc-p-2"
-        style="background-color: #FAFAFA"
+        style="background-color: #FAFAFA; overflow: auto;"
     >
         {{ $slot }}
     </x-mbc::card>
