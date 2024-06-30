@@ -13,17 +13,12 @@
         element="nav"
         dense
     >
-        @php
-            $docRoutes = collect(App\Enums\DocRoute::cases())
-                ->map(function ($routeEnum) {
-                    return $routeEnum->value;
-                })
-                ->groupBy(function ($route) {
-                    return explode('.', $route)[0];
-                });
-        @endphp
 
-        @foreach ($docRoutes as $section => $routes)
+        @foreach (collect(App\Enums\DocRoute::cases())->map(function ($routeEnum) {
+            return $routeEnum->value;
+        })->groupBy(function ($route) {
+            return explode('.', $route)[0];
+        }) as $section => $routes)
             @if ($routes->count() > 1)
                 <x-mbc::typography
                     class="mbc-px-2 mbc-mt-2 mbc-mb-1"

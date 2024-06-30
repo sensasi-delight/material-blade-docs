@@ -1,3 +1,13 @@
+@php
+    if ($componentsProps) {
+        $headings['Properties'] = array_keys($componentsProps);
+    }
+
+    if ($referenceLinks) {
+        array_push($headings, 'References');
+    }
+@endphp
+
 <x-mbc::drawer class="right-sidebar">
     <x-mbc::typography
         variant="caption"
@@ -9,16 +19,16 @@
     </x-mbc::typography>
 
     <x-mbc::list>
-        @foreach ($headings as $i => $heading)
+        @foreach ($headings as $key => $heading)
             @if (is_array($heading))
                 <li>
                     <x-mbc::list-item
-                        href="#{{ strtolower(str_replace(' ', '-', $i)) }}"
+                        href="#{{ strtolower(str_replace(' ', '-', $key)) }}"
                         htmlTag="a"
                         :activated="$loop->first"
                         style="font-weight: unset;"
                     >
-                        {{ $i }}
+                        {{ $key }}
                     </x-mbc::list-item>
 
                     <x-mbc::list class="mbc-p-0">

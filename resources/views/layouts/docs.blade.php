@@ -22,16 +22,10 @@
             @yield('content')
 
             @isset($componentsProps)
-                @php
-                    $headings['Properties'] = array_keys($componentsProps);
-                @endphp
                 <x-component-props-section :componentsProps="$componentsProps" />
             @endisset
 
             @isset($referenceLinks)
-                @php
-                    array_push($headings, 'References');
-                @endphp
                 <x-references-section :links="$referenceLinks" />
             @endisset
         </section>
@@ -50,6 +44,8 @@
 
     @include('layouts.docs.parts.toc', [
         'headings' => $headings,
+        'componentsProps' => $componentsProps ?? null,
+        'referenceLinks' => $referenceLinks ?? null,
     ])
 
     <script src="https://unpkg.com/prismjs@v1.x/components/prism-core.min.js"></script>
