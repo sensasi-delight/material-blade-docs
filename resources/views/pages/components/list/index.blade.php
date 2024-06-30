@@ -9,14 +9,14 @@
             'https://github.com/material-components/material-components-web/tree/v14.0.0/packages/mdc-list',
         ],
         'componentsProps' => [
-            'list' => [
+            'mbc::list' => [
                 ['avatar', 'boolean', 'false', 'If true, the leading image or icon will be circular.'],
                 ['dense', 'boolean', 'false', 'Make the component appears densed.'],
                 ['element', 'string', 'ul', 'The HTML element to use.'],
                 ['disableRipple', 'boolean', 'false', 'If true, the ripple effect will be disabled.'],
                 ['variant', 'single-line | two-line', 'single-line', 'The variant to use.'],
             ],
-            'list-item' => [
+            'mbc::list-item' => [
                 ['activated', 'boolean', 'false', 'If true, the list item will be activated.'],
                 ['disabled', 'boolean', 'false', 'If true, the list item will be disabled.'],
                 ['selected', 'boolean', 'false', 'If true, the list item will be selected.'],
@@ -37,7 +37,7 @@
                     'The trailing icon or image. Icon string format can be found in the <a href="#">Icon component page</a>.',
                 ],
             ],
-            'list-divider' => [['padded', 'bool', 'false', 'If true, the divider will have a padding.']],
+            'mbc::list-divider' => [['padded', 'bool', 'false', 'If true, the divider will have a padding.']],
         ],
     ];
 @endphp
