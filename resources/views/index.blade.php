@@ -97,22 +97,22 @@
 
                                 <!-- Icon Button Actions -->
                                 <x-slot name="iconButtons">
-                                    <x-mbc::IconButton
+                                    <x-mbc::icon-button
                                         title="Add to favorites"
                                         aria-label="Add to favorites"
                                         toggle
-                                        name="favorite"
+                                        icon="favorite"
                                         offIcon="favorite_border"
                                         color="error"
                                     />
-                                    <x-mbc::IconButton
+                                    <x-mbc::icon-button
                                         title="Share"
-                                        name="share"
+                                        icon="share"
                                     />
-                                    <x-mbc::IconButton
+                                    <x-mbc::icon-button
                                         title="More options"
                                         aria-label="More options"
-                                        name="more_vert"
+                                        icon="more_vert"
                                     />
                                 </x-slot>
                             </x-mbc::CardActions>
@@ -216,38 +216,38 @@
                         />
 
                         <div>
-                            <x-mbc::IconButton
+                            <x-mbc::icon-button
                                 toggle
-                                name="home"
+                                icon="home"
                             />
-                            <x-mbc::IconButton
+                            <x-mbc::icon-button
                                 toggle
-                                name="bluetooth"
+                                icon="bluetooth"
                                 color="primary"
                             />
-                            <x-mbc::IconButton
+                            <x-mbc::icon-button
                                 toggle="on"
-                                name="filter_vintage"
+                                icon="filter_vintage"
                                 color="secondary"
                             />
-                            <x-mbc::IconButton
+                            <x-mbc::icon-button
                                 toggle="on"
-                                name="delete"
+                                icon="delete"
                                 color="error"
                             />
-                            <x-mbc::IconButton
+                            <x-mbc::icon-button
                                 toggle
-                                name="paid"
+                                icon="paid"
                                 color="warning"
                             />
-                            <x-mbc::IconButton
+                            <x-mbc::icon-button
                                 toggle
-                                name="power_settings_new"
+                                icon="power_settings_new"
                                 color="info"
                             />
-                            <x-mbc::IconButton
+                            <x-mbc::icon-button
                                 toggle
-                                name="check_circle"
+                                icon="check_circle"
                                 color="success"
                             />
                         </div>
@@ -269,21 +269,21 @@
                                     />
 
                                     <x-mbc::CardActions>
-                                        <x-slot name="iconButtons">
-                                            <x-mbc::IconButton
+                                        <x-slot:icon-buttons>
+                                            <x-mbc::icon-button
                                                 title="Previous"
-                                                name="skip_previous"
+                                                icon="skip_previous"
                                             />
-                                            <x-mbc::IconButton
+                                            <x-mbc::icon-button
                                                 title="play"
                                                 style="font-size: 3em;"
-                                                name="play_arrow"
+                                                icon="play_arrow"
                                             />
-                                            <x-mbc::IconButton
+                                            <x-mbc::icon-button
                                                 title="Next"
-                                                name="skip_next"
+                                                icon="skip_next"
                                             />
-                                        </x-slot>
+                                        </x-slot:icon-buttons>
                                     </x-mbc::CardActions>
                                 </div>
                             </div>
