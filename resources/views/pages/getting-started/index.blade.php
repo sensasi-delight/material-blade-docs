@@ -1,6 +1,10 @@
 @php
     $pageData = [
         'title' => 'Getting Started',
+        'metas' => [
+            'description' =>
+                'Material Blade is a simple package that provides the beautifulness of Google Material Design components as Laravel Blade components. Material Blade aims to make UI/UX development of your Laravel app faster, inspired by Material UI.',
+        ],
         'referenceLinks' => [
             'https://m2.material.io',
             'https://mui.com/material-ui/',
@@ -16,32 +20,15 @@
 
 @section('description')
     <x-mbc::typography>
-        Material Blade is a simple package that provides the beautifulness of <a
-            href="https://material.io"
-            target="_blank"
-        >Material Design
-            components <x-mbc::icon
-                style="font-size: inherit"
-                name="open_in_new"
-            /></a> as <a
+        Material Blade is a simple package that provides the beautifulness of <x-new-tab-anchor
+            href="https://material.io">Material Design components</x-new-tab-anchor> as <x-new-tab-anchor
             href="https://laravel.com/docs/blade#components"
-            target="_blank"
-        >
-            Laravel
-            Blade components <x-mbc::icon
-                style="font-size: inherit"
-                name="open_in_new"
-            /></a>. Material Blade aims to
+        >Laravel
+            Blade components</x-new-tab-anchor>. Material Blade aims to
         make
-        UI/UX development of your Laravel app faster, inspired by <a
-            href="https://mui.com/material-ui/"
-            target="_blank"
-        >MUI
+        UI/UX development of your Laravel app faster, inspired by <x-new-tab-anchor href="https://mui.com/material-ui/">MUI
             (Material
-            UI) <x-mbc::icon
-                style="font-size: inherit"
-                name="open_in_new"
-            /></a>.
+            UI)</x-new-tab-anchor>.
     </x-mbc::typography>
 
     <div class="mbc-mx-8">
