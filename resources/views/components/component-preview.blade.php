@@ -15,6 +15,7 @@
 
     @isset($code)
         <x-mbc::button
+            variant="text"
             onclick="
             switch (this.innerText) {
                 case 'SHOW CODE':
