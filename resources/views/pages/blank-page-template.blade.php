@@ -1,6 +1,9 @@
 @php
     $pageData = [
         'title' => 'Blank Page Template',
+        'metas' => [
+            'description' => 'This is a blank page template.',
+        ],
         'headings' => ['Subheading 1', 'Subheading 2', 'Subheading 3', 'Subheading 4', 'Subheading 5'],
         'referenceLinks' => ['#link1', '#link2', '#link3', '#link4'],
         'componentsProps' => [
@@ -41,3 +44,4 @@
         </x-mbc::typography>
     </section>
 @endsection
+
