@@ -2,11 +2,17 @@
     <x-h2>Icon</x-h2>
 
     <x-component-preview>
-        <x-mbc::banner open icon="error_outline">
+        <x-mbc::banner
+            open
+            icon="error_outline"
+        >
             There was a problem processing a transaction on your credit card.
 
             @slot('actions')
-                <x-mbc::button label="Fix it" variant="text" />
+                <x-mbc::button
+                    label="Fix it"
+                    variant="text"
+                />
             @endslot
         </x-mbc::banner>
 

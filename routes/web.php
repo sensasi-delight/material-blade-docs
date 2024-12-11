@@ -1,12 +1,11 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\URL;
 
 if (config('app.env') === 'production') {
     URL::forceScheme('https');
 }
-
-use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
