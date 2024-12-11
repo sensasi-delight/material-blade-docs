@@ -44,11 +44,9 @@
 @endsection
 
 @section('content')
-
     @include('pages.components.banner.parts.basic-section')
 
     @include('pages.components.banner.parts.fixed-banner-section')
 
     @include('pages.components.banner.parts.icon-section')
-
 @endsection

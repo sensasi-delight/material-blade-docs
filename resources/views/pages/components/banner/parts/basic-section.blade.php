@@ -6,8 +6,14 @@
             There was a problem processing a transaction on your credit card.
 
             @slot('actions')
-                <x-mbc::button label="Fix it" variant="text" />
-                <x-mbc::button label="Learn more" variant="text" />
+                <x-mbc::button
+                    label="Fix it"
+                    variant="text"
+                />
+                <x-mbc::button
+                    label="Learn more"
+                    variant="text"
+                />
             @endslot
         </x-mbc::banner>
 
