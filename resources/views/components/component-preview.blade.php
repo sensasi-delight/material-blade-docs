@@ -1,11 +1,17 @@
-<div class="mbc-mx-8">
-    <x-mbc::card
-        variant="outlined"
-        class="mbc-p-2"
-        style="background-color: #FAFAFA; overflow: auto;"
-    >
-        {{ $slot }}
-    </x-mbc::card>
+@props([
+    'lang' => 'php',
+])
+
+<div>
+    @if (!$slot->isEmpty())
+        <x-mbc::card
+            class="mbc-p-2"
+            style="background-color: #FAFAFA; overflow: auto;"
+            variant="outlined"
+        >
+            {{ $slot }}
+        </x-mbc::card>
+    @endif
 
     @if (isset($code) || isset($codeSummary))
         @php
@@ -38,8 +44,8 @@
                     throw new Error('Invalid button text');
                     break;
             }
-            document.getElementById('{{ $id }}').classList.toggle('show')
-            document.getElementById('{{ $id }}-summary').classList.toggle('show')
+            document.getElementById('{{ $id }}')?.classList.toggle('show')
+            document.getElementById('{{ $id }}-summary')?.classList.toggle('show')
         "
         >
             @if (isset($codeSummary))
@@ -50,16 +56,16 @@
         </x-mbc::button>
 
         <pre
-            id="{{ $id }}"
             class="src-code"
+            id="{{ $id }}"
             @class(['show' => true])
-        ><code class="language-php">{{ $code }}</code></pre>
+        ><code class="language-{{ $lang }}">{{ $code }}</code></pre>
     @endisset
 
     @isset($codeSummary)
         <pre
             id="{{ $id }}-summary"
             @class(['src-code', 'show' => true])
-        ><code class="language-php">{{ $codeSummary }}</code></pre>
+        ><code class="language-{{ $lang }}">{{ $codeSummary }}</code></pre>
     @endisset
 </div>

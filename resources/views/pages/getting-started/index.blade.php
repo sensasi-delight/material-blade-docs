@@ -31,9 +31,18 @@
             UI)</x-new-tab-anchor>.
     </x-mbc::typography>
 
-    <div class="mbc-mx-8">
-        {{-- prettier-ignore-start --}}
-    <pre class="src-code show"><code class="language-php">// from this
+    <x-mbc::alert
+        title="Warning"
+        severity="warning"
+    >
+        This package is still in development. The components and features are limited and may not be suitable for
+        production use.
+    </x-mbc::alert>
+
+    <x-component-preview>
+        @slot('codeSummary')
+            {{-- prettier-ignore-start --}}
+// from this
 &lt;button class="mdc-button">
     &lt;span class="mdc-button__ripple">&lt;/span>
     &lt;span class="mdc-button__label">
@@ -42,9 +51,11 @@
 &lt;/button>
 
 // to this
-&lt;x-mbc::button label="This is a Button"/></code></pre>
-{{-- prettier-ignore-end --}}
-    </div>
+&lt;x-mbc::button label="This is a Button"/>
+            {{-- prettier-ignore-end --}}
+        @endslot
+    </x-component-preview>
+
     <x-mbc::typography>
         General knowledge of Laravel and Blade components i'ts required for using this package. However, the fully
         understand about this feature is helpful for optimizing the usages of this package. If you never heard about <a
@@ -53,34 +64,24 @@
         >
             Laravel
             Blade components <x-mbc::icon
-                style="font-size: inherit"
                 name="open_in_new"
+                style="font-size: inherit"
             /></a>, it is a good start to
         understand it and plays with Material Blade package.
     </x-mbc::typography>
-
-    <x-mbc::alert
-        title="Warning"
-        severity="warning"
-    >
-        This package is still in development. The components and features are limited and may not be suitable for
-        production use.
-    </x-mbc::alert>
 @endsection
 
 @section('content')
     <section>
-        <x-h2>
-            Installation
-        </x-h2>
+        <x-h2>Installation</x-h2>
 
         <x-mbc::typography>
             Material Blade is available on <a
                 href="https://packagist.org/packages/sensasi-delight/material-blade"
                 target="_blank"
             >Packagist <x-mbc::icon
-                    style="font-size: inherit"
                     name="open_in_new"
+                    style="font-size: inherit"
                 /></a>. You can
             install
             it via Composer by running the following command in your Laravel project:
@@ -96,9 +97,10 @@
             Web CSS and JavaScript files.
         </x-mbc::typography>
 
-        <div class="mbc-mx-8">
-            {{-- prettier-ignore-start --}}
-            <pre class="src-code show"><code class="language-html">&lt;!DOCTYPE html>
+        <x-component-preview lang="html">
+            @slot('codeSummary')
+                {{-- prettier-ignore-start --}}
+&lt;!DOCTYPE html>
 &lt;html lang="en">
 
 &lt;head>
@@ -119,9 +121,10 @@
 
 &lt;/body>
 
-&lt;/html></code></pre>
-{{-- prettier-ignore-end --}}
-        </div>
+&lt;/html>
+                {{-- prettier-ignore-end --}}
+            @endslot
+        </x-component-preview>
 
         <x-mbc::typography>
             You should now be able to use Material Blade components in your Laravel Blade views.
@@ -138,8 +141,8 @@
                 href="https://github.com/sensasi-delight/material-blade/blob/main/CONTRIBUTING.md"
                 target="_blank"
             >CONTRIBUTING.md <x-mbc::icon
-                    style="font-size: inherit"
                     name="open_in_new"
+                    style="font-size: inherit"
                 /></a> file.
         </x-mbc::typography>
     </section>
@@ -155,8 +158,8 @@
                 target="_blank"
             >MIT license
                 <x-mbc::icon
-                    style="font-size: inherit"
                     name="open_in_new"
+                    style="font-size: inherit"
                 /></a>.
         </x-mbc::typography>
     </section>
@@ -171,8 +174,8 @@
                 href="mailto:zainadam@gmail.com"
                 target="_blank"
             >zainadam@gmail.com <x-mbc::icon
-                    style="font-size: inherit"
                     name="open_in_new"
+                    style="font-size: inherit"
                 /></a>.
         </x-mbc::typography>
 
@@ -181,8 +184,8 @@
                 href="https://github.com/sensasi-delight/material-blade/issues/new"
                 target="_blank"
             >GitHub <x-mbc::icon
-                    style="font-size: inherit"
                     name="open_in_new"
+                    style="font-size: inherit"
                 /></a>.
         </x-mbc::typography>
     </section>
