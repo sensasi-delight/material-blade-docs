@@ -5,6 +5,7 @@ namespace App\Enums;
 enum DocRoute: string
 {
     case GETTING_STARTED = 'getting-started';
+    case ALERT = 'components.alert';
     // case COMPONENTS_APP_BAR = 'components.app-bar';
     case COMPONENTS_BANNER = 'components.banner';
     case COMPONENTS_BUTTON = 'components.button';
