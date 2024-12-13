@@ -50,6 +50,8 @@
 
     <script src="https://unpkg.com/prismjs@v1.x/components/prism-core.min.js"></script>
     <script src="https://unpkg.com/prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
+
+    @stack('scripts')
 </body>
 
 </html>
