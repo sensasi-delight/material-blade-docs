@@ -29,10 +29,10 @@
     <x-mbc::typography>{{ $desc }}</x-mbc::typography>
 
     <x-component-preview>
-        <iframe src="{{ route('components.app-bar._iframes.app-bar-basic') }}"></iframe>
+        <iframe src="{{ route('components.app-bar._iframes.desc') }}"></iframe>
 
         @slot('code')
-            @include('pages.components.app-bar._codes.basic')
+            @include('pages.components.app-bar._codes.desc')
         @endslot
     </x-component-preview>
 @endsection
