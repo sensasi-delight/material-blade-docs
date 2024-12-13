@@ -7,17 +7,27 @@
         'metas' => [
             'description' => $desc,
         ],
-        'headings' => ['Basic', 'Colors', 'Icons', 'Fixed App Bar', 'Variants'],
+        'headings' => ['Fixed App Bar', 'Variants', 'Colors'],
         'referenceLinks' => [
             'https://m2.material.io/components/app-bars-top/web',
             'https://github.com/material-components/material-components-web/blob/v14.0.0/packages/mdc-top-app-bar/README.md',
             'https://material-components.github.io/material-components-web-catalog/#/component/top-app-bar',
         ],
         'componentsProps' => [
-            'mbc::alert' => [
-                ['color', "'primary' | 'secondary' | 'success' | 'error' | 'info' | 'warning' | string", '', ''],
-                ['fixed', 'bool', 'false', ''],
-                ['variant', "'short' | 'short-collapsed' | 'dense' | 'prominent' | string", 'basic', ''],
+            'mbc::app-bar' => [
+                [
+                    'color',
+                    "'primary' | 'secondary' | 'success' | 'error' | 'info' | 'warning' | string",
+                    '',
+                    'Background color of the app bar.',
+                ],
+                ['fixed', 'bool', 'false', 'If true, the app bar will be fixed at the top of the page.'],
+                [
+                    'variant',
+                    "'short' | 'short-collapsed' | 'dense' | 'prominent' | string",
+                    'basic',
+                    'Variant of the app bar.',
+                ],
             ],
         ],
     ];
@@ -38,11 +48,6 @@
 @endsection
 
 @section('content')
-    {{-- @include('pages.components.app-bar._sections.colors') --}}
     @include('pages.components.app-bar._sections.app-bar-fixed')
-
-    {{-- @include('pages.components.alert._sections.variants')
-    @include('pages.components.alert._sections.severities')
-    @include('pages.components.alert._sections.icons') --}}
+    @include('pages.components.app-bar._sections.colors')
 @endsection
-
