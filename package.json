@@ -5,6 +5,7 @@
     },
     "devDependencies": {
         "@shufo/prettier-plugin-blade": "^1.14.1",
-        "prettier": "^3.3.2"
+        "node-check-update": "^0.0.0",
+        "prettier": "^3.4.2"
     }
 }
