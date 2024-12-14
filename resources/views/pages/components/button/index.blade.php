@@ -46,15 +46,9 @@
     </x-mbc::typography>
 
     <x-mbc::alert severity="info">
-        Material Blade also provides the <x-mbc::button
-            href="{{ route('components.icon-button') }}"
-            label="Icon Button"
-            variant="text"
-        /> and the <x-mbc::button
-            href="{{ route('components.fab') }}"
-            label="Floating Action Button"
-            variant="text"
-        /> components.
+        Material Blade also provides the <x-mbc::button href="{{ route('components.icon-button') }}" label="Icon Button"
+            variant="text" /> and the <x-mbc::button href="{{ route('components.fab') }}" label="Floating Action Button"
+            variant="text" /> components.
     </x-mbc::alert>
 @endsection
 
@@ -105,22 +99,13 @@
 
         <x-component-preview>
             <div>
-                <x-mbc::button
-                    label="Text"
-                    variant="text"
-                />
+                <x-mbc::button label="Text" variant="text" />
 
-                <x-mbc::button
-                    label="Raised"
-                    variant="raised"
-                />
+                <x-mbc::button label="Raised" variant="raised" />
 
                 <x-mbc::button label="Unelevated" />
 
-                <x-mbc::button
-                    label="Outlined"
-                    variant="outlined"
-                />
+                <x-mbc::button label="Outlined" variant="outlined" />
             </div>
 
             @slot('code')
@@ -162,16 +147,9 @@
 
         <x-component-preview>
             <div>
-                <x-mbc::button
-                    href="#anchor-tag-button"
-                    label="Anchor Tag Button"
-                />
+                <x-mbc::button href="#anchor-tag-button" label="Anchor Tag Button" />
 
-                <x-mbc::button
-                    href="#anchor-tag-button"
-                    label="Div Button"
-                    htmlTag="div"
-                />
+                <x-mbc::button href="#anchor-tag-button" label="Div Button" htmlTag="div" />
             </div>
 
             @slot('code')
@@ -204,21 +182,11 @@
 
         <x-component-preview>
             <div>
-                <x-mbc::button
-                    label="Icon Leading"
-                    startIcon="favorite"
-                />
+                <x-mbc::button label="Icon Leading" startIcon="favorite" />
 
-                <x-mbc::button
-                    label="Icon Trailing"
-                    endIcon="grade"
-                />
+                <x-mbc::button label="Icon Trailing" endIcon="grade" />
 
-                <x-mbc::button
-                    label="Both"
-                    startIcon="noise_control_off"
-                    endIcon="disabled_by_default"
-                />
+                <x-mbc::button label="Both" startIcon="noise_control_off" endIcon="disabled_by_default" />
             </div>
 
             @slot('code')
@@ -249,30 +217,16 @@
             <code>Icon</code>
             component. Please visit
             the
-            <x-mbc::button
-                :href="route('components.icon')"
-                label="Icon component page"
-                variant="text"
-            /> for more information.
+            <x-mbc::button :href="route('components.icon')" label="Icon component page" variant="text" /> for more information.
         </x-mbc::typography>
 
         <x-component-preview>
             <div>
-                <x-mbc::button
-                    label="Two Tone Icon Leading"
-                    :startIcon="['favorite', 'two-tone']"
-                />
+                <x-mbc::button label="Two Tone Icon Leading" :startIcon="['favorite', 'two-tone']" />
 
-                <x-mbc::button
-                    label="Outlined Icon Trailing"
-                    :endIcon="['grade', 'outlined']"
-                />
+                <x-mbc::button label="Outlined Icon Trailing" :endIcon="['grade', 'outlined']" />
 
-                <x-mbc::button
-                    label="Both"
-                    :startIcon="['noise_control_off', 'round']"
-                    :endIcon="['disabled_by_default', 'sharp']"
-                />
+                <x-mbc::button label="Both" :startIcon="['noise_control_off', 'round']" :endIcon="['disabled_by_default', 'sharp']" />
             </div>
 
             @slot('code')

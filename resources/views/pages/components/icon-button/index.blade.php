@@ -32,16 +32,9 @@
 @section('description')
     <x-mbc::typography>{{ $pageData['metas']['description'] }}</x-mbc::typography>
 
-    <x-mbc::alert
-        title="Note"
-        severity="info"
-    >
+    <x-mbc::alert title="Note" severity="info">
         For buttons with both icons and text, use the <code>mbc::button</code> component. For more information, see the
-        <x-mbc::button
-            href="{{ route('components.button') }}"
-            label="Button page"
-            variant="text"
-        />.
+        <x-mbc::button href="{{ route('components.button') }}" label="Button page" variant="text" />.
     </x-mbc::alert>
 @endsection
 
@@ -82,30 +75,12 @@
         <x-component-preview>
             <div style="display: flex;">
                 <x-mbc::icon-button icon="home" />
-                <x-mbc::icon-button
-                    icon="bluetooth"
-                    color="primary"
-                />
-                <x-mbc::icon-button
-                    icon="filter_vintage"
-                    color="secondary"
-                />
-                <x-mbc::icon-button
-                    icon="delete"
-                    color="error"
-                />
-                <x-mbc::icon-button
-                    icon="paid"
-                    color="warning"
-                />
-                <x-mbc::icon-button
-                    icon="power_settings_new"
-                    color="info"
-                />
-                <x-mbc::icon-button
-                    icon="check_circle"
-                    color="success"
-                />
+                <x-mbc::icon-button icon="bluetooth" color="primary" />
+                <x-mbc::icon-button icon="filter_vintage" color="secondary" />
+                <x-mbc::icon-button icon="delete" color="error" />
+                <x-mbc::icon-button icon="paid" color="warning" />
+                <x-mbc::icon-button icon="power_settings_new" color="info" />
+                <x-mbc::icon-button icon="check_circle" color="success" />
             </div>
 
             @slot('code-summary')
@@ -153,32 +128,11 @@
 
         <x-component-preview>
             <div style="display: flex;">
-                <x-mbc::icon-button
-                    icon="home"
-                    toggle
-                />
-                <x-mbc::icon-button
-                    icon="power_settings_new"
-                    color="info"
-                    toggle="on"
-                />
-                <x-mbc::icon-button
-                    icon="check_circle"
-                    color="success"
-                    toggle
-                />
-                <x-mbc::icon-button
-                    icon="send"
-                    color="secondary"
-                    toggle="on"
-                    disabled
-                />
-                <x-mbc::icon-button
-                    icon="photo_camera"
-                    color="secondary"
-                    toggle="off"
-                    disabled
-                />
+                <x-mbc::icon-button icon="home" toggle />
+                <x-mbc::icon-button icon="power_settings_new" color="info" toggle="on" />
+                <x-mbc::icon-button icon="check_circle" color="success" toggle />
+                <x-mbc::icon-button icon="send" color="secondary" toggle="on" disabled />
+                <x-mbc::icon-button icon="photo_camera" color="secondary" toggle="off" disabled />
             </div>
 
             @slot('code-summary')
@@ -210,22 +164,9 @@
 
         <x-component-preview>
             <div style="display: flex;">
-                <x-mbc::icon-button
-                    icon="fullscreen_exit"
-                    offIcon="fullscreen"
-                    toggle
-                />
-                <x-mbc::icon-button
-                    icon="wifi"
-                    offIcon="wifi_off"
-                    toggle="on"
-                />
-                <x-mbc::icon-button
-                    icon="favorite"
-                    :offIcon="['favorite', 'two-tone']"
-                    toggle
-                    color="error"
-                />
+                <x-mbc::icon-button icon="fullscreen_exit" offIcon="fullscreen" toggle />
+                <x-mbc::icon-button icon="wifi" offIcon="wifi_off" toggle="on" />
+                <x-mbc::icon-button icon="favorite" :offIcon="['favorite', 'two-tone']" toggle color="error" />
             </div>
 
             @slot('code-summary')
@@ -260,21 +201,9 @@
 
         <x-component-preview>
             <div style="display: flex;">
-                <x-mbc::icon-button
-                    icon="mail"
-                    href="mailto:zainadam.id@gmail.com"
-                />
-                <x-mbc::icon-button
-                    icon="phone"
-                    color="success"
-                    href="tel: +123 456 789"
-                />
-                <x-mbc::icon-button
-                    icon="phone"
-                    color="success"
-                    href="tel: +123 456 789"
-                    disabled
-                />
+                <x-mbc::icon-button icon="mail" href="mailto:zainadam.id@gmail.com" />
+                <x-mbc::icon-button icon="phone" color="success" href="tel: +123 456 789" />
+                <x-mbc::icon-button icon="phone" color="success" href="tel: +123 456 789" disabled />
             </div>
 
             @slot('code-summary')
@@ -304,20 +233,9 @@
 
         <x-component-preview>
             <div style="display: flex;">
-                <x-mbc::icon-button
-                    icon="home"
-                    disableRipple
-                />
-                <x-mbc::icon-button
-                    icon="close"
-                    color="error"
-                    disableRipple
-                />
-                <x-mbc::icon-button
-                    icon="logout"
-                    color="success"
-                    disableRipple
-                />
+                <x-mbc::icon-button icon="home" disableRipple />
+                <x-mbc::icon-button icon="close" color="error" disableRipple />
+                <x-mbc::icon-button icon="logout" color="success" disableRipple />
             </div>
 
             @slot('code-summary')

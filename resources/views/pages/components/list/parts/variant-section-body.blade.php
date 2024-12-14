@@ -15,15 +15,9 @@
 
 <x-component-preview>
     <x-mbc::list variant="two-line">
-        <x-mbc::list-item
-            primary="Item 1"
-            secondary="secondary line"
-        />
+        <x-mbc::list-item primary="Item 1" secondary="secondary line" />
         <x-mbc::list-item primary="Item 2" />
-        <x-mbc::list-item
-            primary="Item 3"
-            secondary="secondary line"
-        />
+        <x-mbc::list-item primary="Item 3" secondary="secondary line" />
     </x-mbc::list>
 
     @slot('code-summary')

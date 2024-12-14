@@ -3,5 +3,5 @@
 
     <x-mbc::alert severity="info">
         Coming soon...
-    </x-mbc::alert>        
+    </x-mbc::alert>
 </section>

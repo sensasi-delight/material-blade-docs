@@ -60,14 +60,8 @@
         </x-h2>
 
         <x-component-preview>
-            <x-mbc::fab
-                icon="add"
-                disabled
-            />
-            <x-mbc::fab
-                icon="add"
-                variant="mini"
-            />
+            <x-mbc::fab icon="add" disabled />
+            <x-mbc::fab icon="add" variant="mini" />
 
             @slot('code')
                 {{-- prettier-ignore-start --}}
@@ -86,10 +80,7 @@
         <x-component-preview>
             <div>
                 <x-mbc::fab label="Order" />
-                <x-mbc::fab
-                    icon="add"
-                    label="Create"
-                />
+                <x-mbc::fab icon="add" label="Create" />
             </div>
 
             @slot('code')

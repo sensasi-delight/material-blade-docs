@@ -2,7 +2,8 @@
     <x-h2>Colors</x-h2>
 
     <x-mbc::typography>
-        Even though the Alert component has four severities, you can customize the color of the Alert component by using the <code>color</code> attribute.
+        Even though the Alert component has four severities, you can customize the color of the Alert component by using
+        the <code>color</code> attribute.
     </x-mbc::typography>
 
     <x-component-preview>

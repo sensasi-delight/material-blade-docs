@@ -63,10 +63,7 @@
                 <x-mbc::icon name="home" />
                 <x-mbc::icon name="['settings', 'outlined']" />
                 <x-mbc::icon :name="['delete', 'round']" />
-                <x-mbc::icon
-                    name="lock"
-                    variant="two-tone"
-                />
+                <x-mbc::icon name="lock" variant="two-tone" />
             </div>
 
             @slot('code-summary')
@@ -96,14 +93,9 @@
         </x-mbc::typography>
 
         <x-mbc::alert severity="info">
-            All available icon names can be found on the <a
-                href="https://fonts.google.com/icons"
-                target="_blank"
-                rel="noopener noreferrer"
-            >Google Material Icons <x-mbc::icon
-                    name="open_in_new"
-                    fontSize="inherit"
-                /></a> website.
+            All available icon names can be found on the <a href="https://fonts.google.com/icons" target="_blank"
+                rel="noopener noreferrer">Google Material Icons <x-mbc::icon name="open_in_new" fontSize="inherit" /></a>
+            website.
         </x-mbc::alert>
     </section>
 
@@ -126,26 +118,11 @@
         <x-component-preview>
             <div style="display: flex; gap: 1em;">
                 <x-mbc::icon name="home" />
-                <x-mbc::icon
-                    name="home"
-                    variant="filled"
-                />
-                <x-mbc::icon
-                    name="home"
-                    variant="outlined"
-                />
-                <x-mbc::icon
-                    name="home"
-                    variant="round"
-                />
-                <x-mbc::icon
-                    name="home"
-                    variant="sharp"
-                />
-                <x-mbc::icon
-                    name="home"
-                    variant="two-tone"
-                />
+                <x-mbc::icon name="home" variant="filled" />
+                <x-mbc::icon name="home" variant="outlined" />
+                <x-mbc::icon name="home" variant="round" />
+                <x-mbc::icon name="home" variant="sharp" />
+                <x-mbc::icon name="home" variant="two-tone" />
             </div>
 
             @slot('code-summary')
@@ -198,26 +175,11 @@ variant="two-tone"
 
         <x-component-preview>
             <div style="display: flex; gap: 1em;">
-                <x-mbc::icon
-                    name="home"
-                    fontSize="1rem"
-                />
-                <x-mbc::icon
-                    name="home"
-                    fontSize="2rem"
-                />
-                <x-mbc::icon
-                    name="home"
-                    fontSize="3rem"
-                />
-                <x-mbc::icon
-                    name="home"
-                    fontSize="4rem"
-                />
-                <x-mbc::icon
-                    name="home"
-                    fontSize="5rem"
-                />
+                <x-mbc::icon name="home" fontSize="1rem" />
+                <x-mbc::icon name="home" fontSize="2rem" />
+                <x-mbc::icon name="home" fontSize="3rem" />
+                <x-mbc::icon name="home" fontSize="4rem" />
+                <x-mbc::icon name="home" fontSize="5rem" />
             </div>
 
             @slot('code-summary')
@@ -268,40 +230,16 @@ variant="two-tone"
         <x-component-preview>
             <div style="display: flex; gap: 1em;">
                 <x-mbc::icon name="home" />
-                <x-mbc::icon
-                    name="bluetooth"
-                    color="primary"
-                />
-                <x-mbc::icon
-                    name="filter_vintage"
-                    color="secondary"
-                />
-                <x-mbc::icon
-                    name="delete"
-                    color="error"
-                />
-                <x-mbc::icon
-                    name="paid"
-                    color="warning"
-                />
-                <x-mbc::icon
-                    name="power_settings_new"
-                    color="info"
-                />
-                <x-mbc::icon
-                    name="check_circle"
-                    color="success"
-                />
+                <x-mbc::icon name="bluetooth" color="primary" />
+                <x-mbc::icon name="filter_vintage" color="secondary" />
+                <x-mbc::icon name="delete" color="error" />
+                <x-mbc::icon name="paid" color="warning" />
+                <x-mbc::icon name="power_settings_new" color="info" />
+                <x-mbc::icon name="check_circle" color="success" />
 
-                <x-mbc::icon
-                    name="colorize"
-                    color="#FF0000"
-                />
+                <x-mbc::icon name="colorize" color="#FF0000" />
 
-                <x-mbc::icon
-                    name="colorize"
-                    color="aqua"
-                />
+                <x-mbc::icon name="colorize" color="aqua" />
             </div>
 
             @slot('code-summary')

@@ -1,9 +1,6 @@
 <head>
     <meta charset="UTF-8">
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>{{ $title }} &mdash; {{ config('app.name') }}</title>
 
@@ -43,47 +40,23 @@
         type="image/png"
     > --}}
 
-    <meta
-        name="description"
-        content="{{ $description }}"
-    >
+    <meta name="description" content="{{ $description }}">
 
-    <meta
-        property="twitter:description"
-        content="{{ $description }}"
-    >
+    <meta property="twitter:description" content="{{ $description }}">
 
-    <meta
-        name="referrer"
-        content="unsafe-url"
-    >
+    <meta name="referrer" content="unsafe-url">
 
-    <meta
-        name="robots"
-        content="index,follow"
-    >
+    <meta name="robots" content="index,follow">
 
-    <meta
-        name="googlebot"
-        content="index,follow"
-    >
+    <meta name="googlebot" content="index,follow">
 
-    <link
-        rel="canonical"
-        href="{{ url()->current() }}"
-    >
+    <link rel="canonical" href="{{ url()->current() }}">
 
-    <meta
-        name="application-name"
-        content="{{ config('app.name') }}"
-    >
+    <meta name="application-name" content="{{ config('app.name') }}">
 
     <x-mbc::_assets />
 
-    <link
-        href="https://unpkg.com/prismjs@v1.x/themes/prism-tomorrow.css"
-        rel="stylesheet"
-    />
+    <link href="https://unpkg.com/prismjs@v1.x/themes/prism-tomorrow.css" rel="stylesheet" />
 
     <style>
         body {

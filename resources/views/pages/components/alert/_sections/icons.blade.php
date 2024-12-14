@@ -9,14 +9,8 @@
     <x-component-preview>
         <div style="display: flex; gap: 0.5rem; flex-direction: column;">
             <x-mbc::alert icon="local_pizza">This is a success Alert.</x-mbc::alert>
-            <x-mbc::alert
-                severity="info"
-                :icon="['local_pizza', 'outlined']"
-            >This is an info Alert.</x-mbc::alert>
-            <x-mbc::alert
-                severity="warning"
-                :icon="['local_pizza', 'two-tone']"
-            >This is a warning Alert.</x-mbc::alert>
+            <x-mbc::alert severity="info" :icon="['local_pizza', 'outlined']">This is an info Alert.</x-mbc::alert>
+            <x-mbc::alert severity="warning" :icon="['local_pizza', 'two-tone']">This is a warning Alert.</x-mbc::alert>
         </div>
 
         @slot('code')
@@ -24,4 +18,3 @@
         @endslot
     </x-component-preview>
 </section>
-

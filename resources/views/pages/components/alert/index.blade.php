@@ -45,4 +45,3 @@
     @include('pages.components.alert._sections.colors')
     @include('pages.components.alert._sections.icons')
 @endsection
-

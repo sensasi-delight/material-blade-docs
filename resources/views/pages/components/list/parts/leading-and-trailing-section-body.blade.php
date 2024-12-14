@@ -12,10 +12,7 @@
             Trailing Icon
         </x-mbc::list-item>
 
-        <x-mbc::list-item
-            startIcon="star"
-            endIcon="bluetooth"
-        >
+        <x-mbc::list-item startIcon="star" endIcon="bluetooth">
             Leading and Trailing Icon
         </x-mbc::list-item>
     </x-mbc::list>
@@ -56,10 +53,7 @@
             Trailing Image
         </x-mbc::list-item>
 
-        <x-mbc::list-item
-            startIcon="https://picsum.photos/id/3/200"
-            endIcon="https://picsum.photos/id/4/200"
-        >
+        <x-mbc::list-item startIcon="https://picsum.photos/id/3/200" endIcon="https://picsum.photos/id/4/200">
             Leading and Trailing Image
         </x-mbc::list-item>
     </x-mbc::list>

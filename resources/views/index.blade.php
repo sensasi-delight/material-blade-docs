@@ -7,10 +7,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Material Blade &mdash; {{ $packageInfo->description }}</title>
 
     <x-mbc::_assets />
@@ -27,16 +24,8 @@
 <body>
     <main>
         <x-mbc::grid container>
-            <x-mbc::grid
-                colSize="6"
-                align="middle"
-                padding="2"
-                @style(['display: flex', 'flex-direction: column', 'gap: 16px'])
-            >
-                <x-mbc::typography
-                    variant="h2"
-                    element="h1"
-                >
+            <x-mbc::grid colSize="6" align="middle" padding="2" @style(['display: flex', 'flex-direction: column', 'gap: 16px'])>
+                <x-mbc::typography variant="h2" element="h1">
                     Material Blade
                 </x-mbc::typography>
 
@@ -45,45 +34,26 @@
                 </x-mbc::typography>
 
                 <div>
-                    <x-mbc::button
-                        href="{{ route('getting-started') }}"
-                        label="Get Started"
-                        variant="raised"
-                    />
+                    <x-mbc::button href="{{ route('getting-started') }}" label="Get Started" variant="raised" />
                 </div>
             </x-mbc::grid>
 
-            <x-mbc::grid
-                style="background-color: #EAEAEA; overflow:hidden; padding-right: 0; height: 100vh"
-                colSize="6"
-                padding="2"
-            >
-                <x-mbc::grid
-                    container
-                    @style(['width: 800px'])
-                >
-                    <x-mbc::grid
-                        colSize="6"
-                        @style(['display: flex', 'flex-direction: column', 'gap: 16px'])
-                    >
+            <x-mbc::grid style="background-color: #EAEAEA; overflow:hidden; padding-right: 0; height: 100vh"
+                colSize="6" padding="2">
+                <x-mbc::grid container @style(['width: 800px'])>
+                    <x-mbc::grid colSize="6" @style(['display: flex', 'flex-direction: column', 'gap: 16px'])>
                         <x-mbc::Card>
                             <!-- Media -->
                             <x-mbc::CardMedia
-                                src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg"
-                            />
+                                src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg" />
 
                             <!-- Header -->
-                            <x-mbc::CardHeader
-                                title="Our Changing Planet"
-                                subtitle="by Kurt Wagner"
-                            />
+                            <x-mbc::CardHeader title="Our Changing Planet" subtitle="by Kurt Wagner" />
 
                             <!-- Content -->
                             <x-mbc::CardContent>
-                                <x-mbc::Typography
-                                    variant="body2"
-                                    slot="Visit ten places on our planet that are undergoing the biggest changes today."
-                                />
+                                <x-mbc::Typography variant="body2"
+                                    slot="Visit ten places on our planet that are undergoing the biggest changes today." />
                             </x-mbc::CardContent>
 
                             <!-- Actions -->
@@ -91,45 +61,23 @@
 
                                 <!-- Button Actions -->
                                 @slot('buttons')
-                                    <x-mbc::button
-                                        variant="text"
-                                        label="Read"
-                                    />
-                                    <x-mbc::button
-                                        variant="text"
-                                        label="Bookmark"
-                                    />
+                                    <x-mbc::button variant="text" label="Read" />
+                                    <x-mbc::button variant="text" label="Bookmark" />
                                 @endslot
 
                                 <!-- Icon Button Actions -->
                                 @slot('iconButtons')
-                                    <x-mbc::icon-button
-                                        title="Add to favorites"
-                                        aria-label="Add to favorites"
-                                        toggle
-                                        icon="favorite"
-                                        offIcon="favorite_border"
-                                        color="error"
-                                    />
-                                    <x-mbc::icon-button
-                                        title="Share"
-                                        icon="share"
-                                    />
-                                    <x-mbc::icon-button
-                                        title="More options"
-                                        aria-label="More options"
-                                        icon="more_vert"
-                                    />
+                                    <x-mbc::icon-button title="Add to favorites" aria-label="Add to favorites" toggle
+                                        icon="favorite" offIcon="favorite_border" color="error" />
+                                    <x-mbc::icon-button title="Share" icon="share" />
+                                    <x-mbc::icon-button title="More options" aria-label="More options" icon="more_vert" />
                                 @endslot
                             </x-mbc::CardActions>
                         </x-mbc::Card>
 
                         <x-mbc::ChipSet>
                             @foreach ($packageInfo->keywords as $keyword)
-                                <x-mbc::Chip
-                                    label="{{ $keyword }}"
-                                    color="primary"
-                                />
+                                <x-mbc::Chip label="{{ $keyword }}" color="primary" />
                             @endforeach
                         </x-mbc::ChipSet>
 
@@ -137,26 +85,14 @@
                             <x-mbc::button>
                                 Text
                             </x-mbc::button>
-                            <x-mbc::button
-                                label="Raised"
-                                variant="raised"
-                            />
-                            <x-mbc::button
-                                label="Unelevated"
-                                variant="unelevated"
-                            />
-                            <x-mbc::button
-                                label="Outlined"
-                                variant="outlined"
-                            />
+                            <x-mbc::button label="Raised" variant="raised" />
+                            <x-mbc::button label="Unelevated" variant="unelevated" />
+                            <x-mbc::button label="Outlined" variant="outlined" />
                         </div>
 
                     </x-mbc::grid>
 
-                    <x-mbc::grid
-                        colSize="6"
-                        @style(['display: flex', 'flex-direction: column', 'gap: 16px'])
-                    >
+                    <x-mbc::grid colSize="6" @style(['display: flex', 'flex-direction: column', 'gap: 16px'])>
                         @php
                             $header = ['Signal name', 'Status', 'Severity', 'Stage', 'Time', 'Roles'];
                             $data = [
@@ -191,11 +127,7 @@
                             ];
                         @endphp
 
-                        <x-MaterialBlade::DataTable
-                            :header="$header"
-                            :data="$data"
-                            withCheckbox
-                        />
+                        <x-MaterialBlade::DataTable :header="$header" :data="$data" withCheckbox />
 
                         @php
                             $tabs = [
@@ -214,48 +146,16 @@
                             ];
                         @endphp
 
-                        <x-mbc::TabBar
-                            :tabs="$tabs"
-                            color="primary"
-                            lightText
-                            elevation="3"
-                        />
+                        <x-mbc::TabBar :tabs="$tabs" color="primary" lightText elevation="3" />
 
                         <div>
-                            <x-mbc::icon-button
-                                toggle
-                                icon="home"
-                            />
-                            <x-mbc::icon-button
-                                toggle
-                                icon="bluetooth"
-                                color="primary"
-                            />
-                            <x-mbc::icon-button
-                                toggle="on"
-                                icon="filter_vintage"
-                                color="secondary"
-                            />
-                            <x-mbc::icon-button
-                                toggle="on"
-                                icon="delete"
-                                color="error"
-                            />
-                            <x-mbc::icon-button
-                                toggle
-                                icon="paid"
-                                color="warning"
-                            />
-                            <x-mbc::icon-button
-                                toggle
-                                icon="power_settings_new"
-                                color="info"
-                            />
-                            <x-mbc::icon-button
-                                toggle
-                                icon="check_circle"
-                                color="success"
-                            />
+                            <x-mbc::icon-button toggle icon="home" />
+                            <x-mbc::icon-button toggle icon="bluetooth" color="primary" />
+                            <x-mbc::icon-button toggle="on" icon="filter_vintage" color="secondary" />
+                            <x-mbc::icon-button toggle="on" icon="delete" color="error" />
+                            <x-mbc::icon-button toggle icon="paid" color="warning" />
+                            <x-mbc::icon-button toggle icon="power_settings_new" color="info" />
+                            <x-mbc::icon-button toggle icon="check_circle" color="success" />
                         </div>
 
                         <x-mbc::Card>
@@ -263,32 +163,17 @@
                                 style="display:flex; flex-direction: row; border-bottom-left-radius: inherit; border-top-left-radius: inherit;">
                                 <x-mbc::CardMedia
                                     src="https://upload.wikimedia.org/wikipedia/en/9/9f/Bohemian_Rhapsody.png"
-                                    style="width: 110px; border-radius: inherit;"
-                                    variant="square"
-                                >
+                                    style="width: 110px; border-radius: inherit;" variant="square">
                                 </x-mbc::CardMedia>
 
                                 <div>
-                                    <x-mbc::CardHeader
-                                        title="Bohemian Raphsody"
-                                        subtitle="by Queen"
-                                    />
+                                    <x-mbc::CardHeader title="Bohemian Raphsody" subtitle="by Queen" />
 
                                     <x-mbc::CardActions>
                                         @slot('icon-buttons')
-                                            <x-mbc::icon-button
-                                                title="Previous"
-                                                icon="skip_previous"
-                                            />
-                                            <x-mbc::icon-button
-                                                title="play"
-                                                style="font-size: 3em;"
-                                                icon="play_arrow"
-                                            />
-                                            <x-mbc::icon-button
-                                                title="Next"
-                                                icon="skip_next"
-                                            />
+                                            <x-mbc::icon-button title="Previous" icon="skip_previous" />
+                                            <x-mbc::icon-button title="play" style="font-size: 3em;" icon="play_arrow" />
+                                            <x-mbc::icon-button title="Next" icon="skip_next" />
                                         @endslot
                                     </x-mbc::CardActions>
                                 </div>

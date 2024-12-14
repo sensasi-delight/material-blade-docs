@@ -20,4 +20,3 @@
 
     </x-mbc::AppBar>
 @endsection
-
