@@ -2,7 +2,8 @@
     <x-h2>Severities</x-h2>
 
     <x-mbc::typography>
-        The Alert component has four severities: <code>success</code>, <code>info</code>, <code>warning</code>, and <code>error</code>.
+        The Alert component has four severities: <code>success</code>, <code>info</code>, <code>warning</code>, and
+        <code>error</code>.
     </x-mbc::typography>
 
     <x-component-preview>

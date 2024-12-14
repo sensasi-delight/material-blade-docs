@@ -25,11 +25,7 @@
                 {{ $componentName }}
             </x-h3>
 
-            <x-mbc::data-table
-                class="fullwidth"
-                :header="['Name', 'Type', 'Default', 'Description']"
-                :data="$props"
-            />
+            <x-mbc::data-table class="fullwidth" :header="['Name', 'Type', 'Default', 'Description']" :data="$props" />
         </section>
     @endforeach
 </section>

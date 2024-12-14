@@ -17,4 +17,3 @@
         @endslot
     </x-component-preview>
 </section>
-

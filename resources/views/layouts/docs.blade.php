@@ -33,12 +33,8 @@
         <div class="mbc-mt-8">
             <x-mbc::button
                 href="https://github.com/sensasi-delight/material-blade-docs/tree/main/resources/views/pages/{{ Route::current()->uri }}/index.blade.php"
-                label="Edit this page"
-                variant="outlined"
-                endIcon="open_in_new"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-            />
+                label="Edit this page" variant="outlined" endIcon="open_in_new" target="_blank"
+                rel="noopener noreferrer nofollow" />
         </div>
     </main>
 
