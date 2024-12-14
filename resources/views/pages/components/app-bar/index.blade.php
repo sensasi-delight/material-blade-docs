@@ -39,15 +39,16 @@
     <x-mbc::typography>{{ $desc }}</x-mbc::typography>
 
     <x-component-preview>
-        <iframe src="{{ route('components.app-bar._iframes.desc') }}"></iframe>
+        <iframe src="{{ route('components.app-bar._iframes.basic') }}"></iframe>
 
         @slot('code')
-            @include('pages.components.app-bar._codes.desc')
+            @include('pages.components.app-bar._codes.basic', ['title' => 'Basic App Bar'])
         @endslot
     </x-component-preview>
 @endsection
 
 @section('content')
     @include('pages.components.app-bar._sections.app-bar-fixed')
+    @include('pages.components.app-bar._sections.variants')
     @include('pages.components.app-bar._sections.colors')
 @endsection

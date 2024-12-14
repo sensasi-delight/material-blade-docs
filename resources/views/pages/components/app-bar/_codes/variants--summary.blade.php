@@ -1,0 +1,3 @@
+&lt;x-mbc::app-bar variant="....">
+    ...
+&lt;/x-mbc::app-bar>

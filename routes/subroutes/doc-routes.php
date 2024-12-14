@@ -16,7 +16,7 @@ Route::view(
 )->name('components.banner.parts.fixed-banner-preview');
 
 foreach ([
-    'desc',
+    'basic',
     'fixed',
 ] as $name) {
     Route::view(
@@ -24,3 +24,8 @@ foreach ([
         'pages.components.app-bar._iframes.'.$name
     )->name('components.app-bar._iframes.'.$name);
 }
+
+Route::get(
+    'components/app-bar/_iframes/variants/{variant}',
+    fn (string $variant) => view('pages.components.app-bar._iframes.variants', compact('variant'))
+)->name('components.app-bar._iframes.variants');
