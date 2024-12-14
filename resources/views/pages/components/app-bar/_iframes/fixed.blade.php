@@ -1,74 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
+@php
+    $title = 'Fixed App Bar';
+@endphp
 
-<head>
-    <meta charset="UTF-8">
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-    <meta
-        http-equiv="X-UA-Compatible"
-        content="ie=edge"
-    >
-    <title>App Bar Fixed Preview</title>
+@extends('pages.components.app-bar._iframes.layout', [$title])
 
-    <x-mbc::_assets />
-</head>
-
-<body>
+@section('app-bar')
     <x-mbc::AppBar fixed>
         @slot('start')
-            <x-mbc::IconButton
-                icon="menu"
-                color="inherit"
-                aria-label="Open navigation menu"
-            />
+            <x-mbc::IconButton aria-label="Open navigation menu" icon="menu" color="inherit" />
 
-            <span class="mdc-top-app-bar__title">Page title</span>
+            <span class="mdc-top-app-bar__title">{{ $title }}</span>
         @endslot
 
         @slot('end')
-            <x-mbc::icon-button
-                icon="favorite"
-                color="inherit"
-                aria-label="Favorite"
-            />
-            <x-mbc::icon-button
-                icon="search"
-                color="inherit"
-                aria-label="Search"
-            />
-            <x-mbc::icon-button
-                icon="more_vert"
-                color="inherit"
-                aria-label="Options"
-            />
+            <x-mbc::icon-button aria-label="Favorite" icon="favorite" color="inherit" />
+            <x-mbc::icon-button aria-label="Search" icon="search" color="inherit" />
+            <x-mbc::icon-button aria-label="Options" icon="more_vert" color="inherit" />
         @endslot
 
     </x-mbc::AppBar>
-
-    <x-mbc::typography>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident suscipit culpa quos, quidem sunt non, cum
-        laborum sequi explicabo expedita dolor odio blanditiis, ducimus commodi. Consectetur esse quidem officia est.
-    </x-mbc::typography>
-
-    <x-mbc::typography>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident suscipit culpa quos, quidem sunt non, cum
-        laborum sequi explicabo expedita dolor odio blanditiis, ducimus commodi. Consectetur esse quidem officia est.
-    </x-mbc::typography>
-
-    <x-mbc::typography>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident suscipit culpa quos, quidem sunt non, cum
-        laborum sequi explicabo expedita dolor odio blanditiis, ducimus commodi. Consectetur esse quidem officia est.
-    </x-mbc::typography>
-
-    <x-mbc::typography>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident suscipit culpa quos, quidem sunt non, cum
-        laborum sequi explicabo expedita dolor odio blanditiis, ducimus commodi. Consectetur esse quidem officia est.
-    </x-mbc::typography>
-
-</body>
-
-</html>
+@endsection
 
