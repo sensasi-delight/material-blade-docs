@@ -21,7 +21,7 @@ enum DocRoute: string
     // case COMPONENTS_IMAGE_LIST = 'components.image-list';
     case COMPONENTS_ICON_BUTTON = 'components.icon-button';
     case COMPONENTS_LIST = 'components.list';
-    // case COMPONENTS_MENU = 'components.menu';
+    case COMPONENTS_MENU = 'components.menu';
     // case COMPONENTS_NAVIGATION_DRAWER = 'components.navigation-drawer';
     // case COMPONENTS_PROGRESS_INDICATOR = 'components.progress-indicator';
     // case COMPONENTS_RADIO_BUTTON = 'components.radio-button';
