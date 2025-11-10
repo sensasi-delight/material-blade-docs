@@ -27,7 +27,7 @@ enum DocRoute: string
     case COMPONENTS_RADIO_BUTTON = 'components.radio';
     case COMPONENTS_SLIDER = 'components.slider';
     case COMPONENTS_SNACKBAR = 'components.snackbar';
-    // case COMPONENTS_SWITCH = 'components.switch';
+    case COMPONENTS_SWITCH = 'components.switch';
     // case COMPONENTS_TAB_BAR = 'components.tab-bar';
     // case COMPONENTS_TEXT_FIELD = 'components.text-field';
     case COMPONENTS_TOOLTIP = 'components.tooltip';
