@@ -1,0 +1,13 @@
+&lt;x-mbc::typography variant="h1">h1. Heading&lt;/x-mbc::typography>
+&lt;x-mbc::typography variant="h2">h2. Heading&lt;/x-mbc::typography>
+&lt;x-mbc::typography variant="h3">h3. Heading&lt;/x-mbc::typography>
+&lt;x-mbc::typography variant="h4">h4. Heading&lt;/x-mbc::typography>
+&lt;x-mbc::typography variant="h5">h5. Heading&lt;/x-mbc::typography>
+&lt;x-mbc::typography variant="h6">h6. Heading&lt;/x-mbc::typography>
+&lt;x-mbc::typography variant="subtitle1">subtitle1. Subtitle&lt;/x-mbc::typography>
+&lt;x-mbc::typography variant="subtitle2">subtitle2. Subtitle&lt;/x-mbc::typography>
+&lt;x-mbc::typography variant="body1">body1. Lorem ipsum dolor sit amet&lt;/x-mbc::typography>
+&lt;x-mbc::typography variant="body2">body2. Lorem ipsum dolor sit amet&lt;/x-mbc::typography>
+&lt;x-mbc::typography variant="button">button text&lt;/x-mbc::typography>
+&lt;x-mbc::typography variant="caption">caption text&lt;/x-mbc::typography>
+&lt;x-mbc::typography variant="overline">overline text&lt;/x-mbc::typography>
