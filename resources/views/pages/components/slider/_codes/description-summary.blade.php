@@ -1,0 +1,1 @@
+&lt;x-mbc::slider aria-label="Basic slider example" />
