@@ -14,7 +14,7 @@ enum DocRoute: string
     case COMPONENTS_CARD = 'components.card';
     case COMPONENTS_CHECKBOX = 'components.checkbox';
     case COMPONENTS_CHIP = 'components.chip';
-    // case COMPONENTS_DATA_TABLE = 'components.data-table';
+    case COMPONENTS_DATA_TABLE = 'components.data-table';
     case COMPONENTS_DIALOG = 'components.dialog';
     case COMPONENTS_FAB = 'components.fab';
     case COMPONENTS_ICON = 'components.icon';
