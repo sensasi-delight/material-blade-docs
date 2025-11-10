@@ -23,7 +23,7 @@ enum DocRoute: string
     case COMPONENTS_LIST = 'components.list';
     case COMPONENTS_MENU = 'components.menu';
     case COMPONENTS_NAVIGATION_DRAWER = 'components.navigation-drawer';
-    // case COMPONENTS_PROGRESS_INDICATOR = 'components.progress-indicator';
+    case COMPONENTS_PROGRESS_INDICATOR = 'components.progress-indicator';
     // case COMPONENTS_RADIO_BUTTON = 'components.radio-button';
     // case COMPONENTS_SLIDER = 'components.slider';
     // case COMPONENTS_SNACKBAR = 'components.snackbar';
