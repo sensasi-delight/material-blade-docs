@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Enums;
 
 enum DocRoute: string
@@ -9,7 +11,7 @@ enum DocRoute: string
     case COMPONENTS_APP_BAR = 'components.app-bar';
     case COMPONENTS_BANNER = 'components.banner';
     case COMPONENTS_BUTTON = 'components.button';
-    // case COMPONENTS_CARD = 'components.card';
+    case COMPONENTS_CARD = 'components.card';
     // case COMPONENTS_CHIP = 'components.chip';
     // case COMPONENTS_DATA_TABLE = 'components.data-table';
     // case COMPONENTS_DIALOG = 'components.dialog';
