@@ -30,6 +30,6 @@ enum DocRoute: string
     // case COMPONENTS_SWITCH = 'components.switch';
     // case COMPONENTS_TAB_BAR = 'components.tab-bar';
     // case COMPONENTS_TEXT_FIELD = 'components.text-field';
-    // case COMPONENTS_TOOLTIP = 'components.tooltip';
+    case COMPONENTS_TOOLTIP = 'components.tooltip';
     case COMPONENTS_TYPOGRAPHY = 'components.typography';
 }
