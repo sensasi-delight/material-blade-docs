@@ -1,0 +1,1 @@
+&lt;x-mbc::tab-bar :tabs="['Flights', 'Hotels', 'Restaurants']" />
