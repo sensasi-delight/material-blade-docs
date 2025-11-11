@@ -15,6 +15,7 @@
         "sentry/sentry-laravel": "^4.17"
     },
     "require-dev": {
+        "laravel/boost": "^1.7",
         "laravel/pint": "^1.25",
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.8",
@@ -65,6 +66,6 @@
             "php-http/discovery": true
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true
 }
