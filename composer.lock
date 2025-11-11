@@ -3423,12 +3423,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensasi-delight/material-blade.git",
-                "reference": "aedfd3044807623b23ca7e0c7091f9addd2ed653"
+                "reference": "ad2bd96c81ee4f55ac77408a96275fa05ad93472"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensasi-delight/material-blade/zipball/aedfd3044807623b23ca7e0c7091f9addd2ed653",
-                "reference": "aedfd3044807623b23ca7e0c7091f9addd2ed653",
+                "url": "https://api.github.com/repos/sensasi-delight/material-blade/zipball/ad2bd96c81ee4f55ac77408a96275fa05ad93472",
+                "reference": "ad2bd96c81ee4f55ac77408a96275fa05ad93472",
                 "shasum": ""
             },
             "require": {
@@ -3476,7 +3476,7 @@
                 "issues": "https://github.com/sensasi-delight/material-blade/issues",
                 "source": "https://github.com/sensasi-delight/material-blade/tree/main"
             },
-            "time": "2025-11-11T03:12:57+00:00"
+            "time": "2025-11-11T04:28:20+00:00"
         },
         {
             "name": "sentry/sentry",
