@@ -7,7 +7,7 @@
         'metas' => [
             'description' => $desc,
         ],
-        'headings' => ['Fixed App Bar', 'Variants', 'Colors'],
+        'headings' => ['Title Slot', 'Fixed App Bar', 'Variants', 'Colors'],
         'referenceLinks' => [
             'https://m2.material.io/components/app-bars-top/web',
             'https://github.com/material-components/material-components-web/blob/v14.0.0/packages/mdc-top-app-bar/README.md',
@@ -22,6 +22,7 @@
                     'Background color of the app bar.',
                 ],
                 ['fixed', 'bool', 'false', 'If true, the app bar will be fixed at the top of the page.'],
+                ['title', 'string', '', 'Simple text title for the app bar. Use the title slot for more complex content.'],
                 [
                     'variant',
                     "'short' | 'short-collapsed' | 'dense' | 'prominent' | string",
@@ -48,6 +49,7 @@
 @endsection
 
 @section('content')
+    @include('pages.components.app-bar._sections.title-slot')
     @include('pages.components.app-bar._sections.app-bar-fixed')
     @include('pages.components.app-bar._sections.variants')
     @include('pages.components.app-bar._sections.colors')

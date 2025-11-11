@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use App\Enums\DocRoute;
 use Illuminate\Support\Facades\Route;
 
@@ -18,6 +20,8 @@ Route::view(
 foreach ([
     'basic',
     'fixed',
+    'title-attribute',
+    'title-slot',
 ] as $name) {
     Route::view(
         'components/app-bar/_iframes/'.$name,

@@ -5,11 +5,9 @@
 @extends('pages.components.app-bar._iframes.layout', [$variant])
 
 @section('app-bar')
-    <x-mbc::AppBar :variant="$variant">
+    <x-mbc::AppBar :variant="$variant" :title="$variant">
         @slot('start')
             <x-mbc::IconButton aria-label="Open navigation menu" icon="menu" color="inherit" />
-
-            <span class="mdc-top-app-bar__title">{{ $variant }}</span>
         @endslot
 
         @slot('end')

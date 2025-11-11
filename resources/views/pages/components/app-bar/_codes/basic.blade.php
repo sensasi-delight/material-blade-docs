@@ -1,12 +1,10 @@
-&lt;x-mbc::app-bar>
+&lt;x-mbc::app-bar title="Page title">
 &commat;slot('start')
 &lt;x-mbc::IconButton
 icon="menu"
 color="inherit"
 aria-label="Open navigation menu"
 />
-
-&lt;span class="mdc-top-app-bar__title">Page title&lt;/span>
 &commat;endslot
 
 &commat;slot('end')
