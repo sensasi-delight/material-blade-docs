@@ -6,48 +6,31 @@
     </x-mbc::typography>
 
     <x-component-preview>
-        <div style="display: flex; flex-direction: column; gap: 2rem;">
-            <div>
-                <x-mbc::typography variant="subtitle2" gutterBottom>Default</x-mbc::typography>
-                <div style="position: relative; height: 150px; background: #f5f5f5; border-radius: 4px; overflow: hidden;">
-                    <x-mbc::snackbar variant="default" message="Default layout" class="mdc-snackbar--open">
-                        @slot('action')
-                            <button type="button" class="mdc-button mdc-snackbar__action">
-                                <div class="mdc-button__ripple"></div>
-                                <span class="mdc-button__label">Action</span>
-                            </button>
-                        @endslot
-                    </x-mbc::snackbar>
-                </div>
-            </div>
-
-            <div>
-                <x-mbc::typography variant="subtitle2" gutterBottom>Leading</x-mbc::typography>
-                <div style="position: relative; height: 150px; background: #f5f5f5; border-radius: 4px; overflow: hidden;">
-                    <x-mbc::snackbar variant="leading" message="Leading layout (action on left)" class="mdc-snackbar--open">
-                        @slot('action')
-                            <button type="button" class="mdc-button mdc-snackbar__action">
-                                <div class="mdc-button__ripple"></div>
-                                <span class="mdc-button__label">Action</span>
-                            </button>
-                        @endslot
-                    </x-mbc::snackbar>
-                </div>
-            </div>
-
-            <div>
-                <x-mbc::typography variant="subtitle2" gutterBottom>Stacked</x-mbc::typography>
-                <div style="position: relative; height: 180px; background: #f5f5f5; border-radius: 4px; overflow: hidden;">
-                    <x-mbc::snackbar variant="stacked" message="Stacked layout (action below message)" class="mdc-snackbar--open">
-                        @slot('action')
-                            <button type="button" class="mdc-button mdc-snackbar__action">
-                                <div class="mdc-button__ripple"></div>
-                                <span class="mdc-button__label">Action</span>
-                            </button>
-                        @endslot
-                    </x-mbc::snackbar>
-                </div>
-            </div>
+        <x-mbc::snackbar id="snackbar-default" variant="default" message="Default layout">
+            @slot('action')
+                <x-mbc::button label="Action" />
+            @endslot
+        </x-mbc::snackbar>
+        
+        <x-mbc::snackbar id="snackbar-leading" variant="leading" message="Leading layout (action on left)">
+            @slot('action')
+                <x-mbc::button label="Action" />
+            @endslot
+        </x-mbc::snackbar>
+        
+        <x-mbc::snackbar id="snackbar-stacked" variant="stacked" message="Stacked layout (action below message)">
+            @slot('action')
+                <x-mbc::button label="Action" />
+            @endslot
+        </x-mbc::snackbar>
+        
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <x-mbc::button label="Default Variant" variant="outlined" 
+                onclick="document.getElementById('snackbar-default').MDCSnackbar.open()" />
+            <x-mbc::button label="Leading Variant" variant="outlined" 
+                onclick="document.getElementById('snackbar-leading').MDCSnackbar.open()" />
+            <x-mbc::button label="Stacked Variant" variant="outlined" 
+                onclick="document.getElementById('snackbar-stacked').MDCSnackbar.open()" />
         </div>
 
         @slot('code')
